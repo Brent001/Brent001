@@ -129,10 +129,6 @@
 
 *「空を見上げてみて」*&emsp;—&emsp;look at the sky
 
-<br/>
-
-[![](https://img.shields.io/badge/github-Brent001-a8d8ea?style=flat-square&logo=github&logoColor=1a2e3a)](https://github.com/Brent001)
-
 </div>
 
 <br/>
