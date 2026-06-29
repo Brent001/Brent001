@@ -132,5 +132,5 @@
 </div>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:162536,100:0d1117&height=120&section=footer" width="100%"/>
+  <img src="https://raw.githubusercontent.com/Brent001/Brent001/main/footer.svg" width="100%"/>
 </div>
