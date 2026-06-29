@@ -35,7 +35,7 @@
 
 <br/>
 
-## About &nbsp;<sub>自己紹介</sub>
+## About &middot; 自己紹介 &nbsp;
 
 ```
   role    ///  CS Student · Web Dev · Open Source
