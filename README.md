@@ -74,8 +74,7 @@
 </svg>
 </div>
 
-## Tools &amp; Tech &nbsp;<sub>技術スタック</sub>
-
+## Tools &amp; Tech &middot; 技術スタック &nbsp;
 <div align="center">
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-a8d8ea?style=flat-square&logo=typescript&logoColor=1a2e3a)
