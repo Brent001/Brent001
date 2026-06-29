@@ -1,0 +1,236 @@
+<svg viewBox="0 0 900 140" width="900" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    :root{--sage:#b8e0d2;--lav:#d6c9e8;--cream:#fef9ef;--teal:#7bbfcc;--warm:#e8c4a0;--darksage:#3a7a5a;--midsage:#5a9e7a;--lightsage:#8dc4a8;--rp1:#2a6a6a;--rp2:#3a8a8a;--rp3:#1a5a5a}
+    .water-bg{fill:url(#wG)}
+    .ra{fill:none;stroke-linecap:round;stroke-linejoin:round;opacity:0;animation:rai 2s ease forwards,rab 6s 2s ease-in-out infinite}
+    .ra1{stroke:#4ab8a8;stroke-width:16}.ra2{stroke:#6a7ab8;stroke-width:12;animation-delay:.3s,2.3s}.ra3{stroke:#5aaaba;stroke-width:10;animation-delay:.6s,2.6s}
+    .rc{fill:none;stroke-linecap:round;stroke-dasharray:200;stroke-dashoffset:200;opacity:0;animation:d 1.5s ease forwards,rd 18s 2s ease-in-out infinite}
+    .rs{opacity:0;animation:rt 3s ease-in-out infinite}
+    .rm{opacity:0;animation:rmi 2s .5s ease forwards,rms 4s 2.5s ease-in-out infinite}
+    .rmt{fill:none;stroke-linecap:round;opacity:0;animation:rmts linear infinite}
+    .rp{fill:none;stroke-linecap:round;stroke-dasharray:900 1400;stroke-dashoffset:900;animation:rf linear infinite}
+    .rp1{stroke:var(--rp1);stroke-width:1;animation-duration:10s;opacity:.15}
+    .rp2{stroke:var(--rp2);stroke-width:.8;animation-duration:12s;animation-delay:-3s;opacity:.12}
+    .rp3{stroke:var(--rp3);stroke-width:1.2;animation-duration:9s;animation-delay:-5s;opacity:.18}
+    .rp4{stroke:var(--rp1);stroke-width:.6;animation-duration:14s;animation-delay:-7s;opacity:.1}
+    .rp5{stroke:var(--rp2);stroke-width:.9;animation-duration:11s;animation-delay:-2s;opacity:.14}
+    .rp6{stroke:var(--rp3);stroke-width:.7;animation-duration:13s;animation-delay:-8s;opacity:.11}
+    .rp7{stroke:var(--rp1);stroke-width:1.1;animation-duration:8s;animation-delay:-4s;opacity:.16}
+    .rp8{stroke:var(--rp2);stroke-width:.5;animation-duration:15s;animation-delay:-6s;opacity:.08}
+    .rpm{fill:none;stroke-linecap:round;stroke-dasharray:80;stroke-dashoffset:80;opacity:0;animation:d 1.5s 1s ease forwards}
+    .sh{opacity:0;animation:shp 3s ease-in-out infinite}
+    .gb{stroke-width:1.8;stroke-linecap:round;fill:none;stroke-dasharray:50;stroke-dashoffset:50;opacity:0;animation:d .8s ease forwards,sw 3s ease-in-out infinite;transform-origin:top center}
+    .gm{stroke-width:2.2;stroke-linecap:round;fill:none;stroke-dasharray:60;stroke-dashoffset:60;opacity:0;animation:d .8s ease forwards,sw 3s ease-in-out infinite;transform-origin:top center}
+    .gf{stroke-width:2.8;stroke-linecap:round;fill:none;stroke-dasharray:70;stroke-dashoffset:70;opacity:0;animation:d .8s ease forwards,sw 3s ease-in-out infinite;transform-origin:top center}
+    .bs{stroke:var(--darksage)}.bm{stroke:var(--midsage)}.bl{stroke:var(--lightsage)}.bt{stroke:var(--teal)}.bw{stroke:#7aaa6a}
+    .rd{fill:none;stroke:#2a5a3a;stroke-linecap:round;stroke-dasharray:60;stroke-dashoffset:60;opacity:0;animation:d 1s ease forwards,rds 4s ease-in-out infinite;transform-origin:bottom center}
+    .ct{fill:#3a4a2a;opacity:0;animation:d .5s 1.2s ease forwards}
+    .ly{fill:#1a4a2a;stroke:#2a6a3a;stroke-width:.8;opacity:0;animation:lyi 1s 1.5s ease forwards,lyb 5s 2.5s ease-in-out infinite}
+    .lf{fill:var(--lav);opacity:0;animation:lyi 1s 1.8s ease forwards,lyb 5s 2.8s ease-in-out infinite}
+    .pb{fill:none;stroke-linecap:round;stroke-dasharray:20;stroke-dashoffset:20;opacity:0;animation:d .6s 1s ease forwards}
+    @keyframes d{to{stroke-dashoffset:0}}
+    @keyframes sw{0%{transform:rotate(0) skewX(0)}25%{transform:rotate(-3deg) skewX(-1.5deg)}50%{transform:rotate(1deg) skewX(.5deg)}75%{transform:rotate(-2deg) skewX(-1deg)}100%{transform:rotate(0) skewX(0)}}
+    @keyframes rai{to{opacity:.12}}
+    @keyframes rab{0%,100%{opacity:.12;transform:translateY(0) scaleX(1)}50%{opacity:.2;transform:translateY(2px) scaleX(1.02)}}
+    @keyframes rd{0%,100%{transform:translateX(0)}50%{transform:translateX(-8px)}}
+    @keyframes rt{0%,100%{opacity:.08}50%{opacity:.35}}
+    @keyframes rmi{to{opacity:.08}}
+    @keyframes rms{0%,100%{transform:scaleX(1);opacity:.08}50%{transform:scaleX(2);opacity:.16}}
+    @keyframes rmts{0%,100%{opacity:0}5%{opacity:.35}25%{opacity:.2}35%{opacity:0}}
+    @keyframes rf{from{stroke-dashoffset:900}to{stroke-dashoffset:-1400}}
+    @keyframes shp{0%,100%{opacity:0}30%{opacity:.4}70%{opacity:.15}}
+    @keyframes rds{0%,100%{transform:rotate(0)}30%{transform:rotate(-1.5deg)}70%{transform:rotate(1deg)}}
+    @keyframes lyi{to{opacity:.7}}
+    @keyframes lyb{0%,100%{transform:translateY(0)}50%{transform:translateY(1.5px)}}
+  </style>
+  <defs>
+    <linearGradient id="wG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0e2222"/><stop offset="20%" stop-color="#0c1e1e"/>
+      <stop offset="50%" stop-color="#0a1818"/><stop offset="80%" stop-color="#081414"/>
+      <stop offset="100%" stop-color="#061010"/>
+    </linearGradient>
+    <linearGradient id="sG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/><stop offset="70%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#040a08" stop-opacity=".8"/>
+    </linearGradient>
+    <linearGradient id="mlG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fef9ef" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#fef9ef" stop-opacity=".04"/>
+      <stop offset="50%" stop-color="#fef9ef" stop-opacity=".06"/>
+      <stop offset="60%" stop-color="#fef9ef" stop-opacity=".04"/>
+      <stop offset="100%" stop-color="#fef9ef" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="wB"><feGaussianBlur stdDeviation="2.5"/></filter>
+    <filter id="sB"><feGaussianBlur stdDeviation="5"/></filter>
+    <filter id="sB2"><feGaussianBlur stdDeviation="8"/></filter>
+  </defs>
+
+  <!-- WATER BASE -->
+  <rect width="900" height="140" class="water-bg"/>
+  <rect width="900" height="140" fill="url(#sG)"/>
+
+  <!-- MOONLIGHT PATH on water -->
+  <rect x="700" y="48" width="120" height="90" fill="url(#mlG)" opacity=".6"/>
+  <ellipse cx="760" cy="90" rx="35" ry="50" fill="url(#mlG)" filter="url(#sB2)" opacity=".4"/>
+
+  <!-- ====== REFLECTIONS (blurred) ====== -->
+  <g filter="url(#wB)">
+    <!-- Reflected Aurora -->
+    <path class="ra ra1" d="M0,58 C80,66 160,52 250,63 C340,74 420,55 520,66 C620,77 700,58 780,69 C830,73 870,61 900,67"/>
+    <path class="ra ra2" d="M0,70 C100,59 200,76 300,64 C400,52 480,72 580,62 C680,52 760,71 860,60"/>
+    <path class="ra ra3" d="M50,82 C130,90 220,76 330,87 C440,98 520,78 620,89 C720,100 800,80 900,92"/>
+
+    <!-- Reflected Stars -->
+    <circle class="rs" cx="140" cy="58" r="2" fill="#a8d8ea" style="animation-delay:0s"/>
+    <circle class="rs" cx="300" cy="52" r="1.5" fill="#a8d8ea" style="animation-delay:.7s"/>
+    <circle class="rs" cx="500" cy="55" r="2.5" fill="#d6c9e8" style="animation-delay:1.3s"/>
+    <circle class="rs" cx="700" cy="50" r="1.5" fill="#a8d8ea" style="animation-delay:.4s"/>
+    <circle class="rs" cx="220" cy="74" r="1.2" fill="#d6c9e8" style="animation-delay:.6s"/>
+    <circle class="rs" cx="660" cy="66" r="1.5" fill="#a8d8ea" style="animation-delay:1.5s"/>
+    <circle class="rs" cx="400" cy="60" r="1" fill="#e8c4a0" style="animation-delay:.3s"/>
+    <circle class="rs" cx="560" cy="69" r="1.2" fill="#d6c9e8" style="animation-delay:1.1s"/>
+    <circle class="rs" cx="50" cy="63" r="1" fill="#a8d8ea" style="animation-delay:1.8s"/>
+    <circle class="rs" cx="850" cy="59" r="1" fill="#a8d8ea" style="animation-delay:.9s"/>
+    <circle class="rs" cx="450" cy="56" r="1.3" fill="#d6c9e8" style="animation-delay:2s"/>
+    <circle class="rs" cx="780" cy="65" r="1.2" fill="#e8c4a0" style="animation-delay:.2s"/>
+    <circle class="rs" cx="180" cy="68" r="1" fill="#a8d8ea" style="animation-delay:1.6s"/>
+    <circle class="rs" cx="620" cy="53" r="1.5" fill="#d6c9e8" style="animation-delay:.8s"/>
+    <circle class="rs" cx="820" cy="72" r="1" fill="#a8d8ea" style="animation-delay:2.2s"/>
+
+    <!-- Reflected Moon Shimmer -->
+    <ellipse class="rm" cx="760" cy="88" rx="4" ry="42" fill="var(--cream)" filter="url(#sB)"/>
+    <ellipse class="rm" cx="760" cy="82" rx="7" ry="32" fill="var(--cream)" filter="url(#sB)" style="animation-delay:.3s,2.8s"/>
+    <ellipse class="rm" cx="760" cy="94" rx="3" ry="38" fill="var(--warm)" filter="url(#sB)" style="animation-delay:.6s,3.1s"/>
+
+    <!-- Reflected Clouds (wobbly) -->
+    <path class="rc" d="M60,63 C75,58 92,67 110,60 C122,55 138,65 148,58 C158,53 168,63 155,70" stroke="#4a8aaa" stroke-width="1.2" style="animation-delay:.3s,2.3s"/>
+    <path class="rc" d="M570,56 C588,50 612,59 635,52 C650,47 668,57 678,50 C688,45 698,56 684,63" stroke="#4a8aaa" stroke-width="1" style="animation-delay:.6s,2.6s"/>
+    <path class="rc" d="M300,61 C315,56 332,65 348,58 C358,53 370,63 358,70" stroke="#4a8aaa" stroke-width=".8" style="animation-delay:.9s,2.9s"/>
+    <path class="rc" d="M810,60 C822,55 838,64 850,57 C860,52 870,62 860,68" stroke="#4a8aaa" stroke-width=".7" style="animation-delay:1.2s,3.2s"/>
+
+    <!-- Reflected Meteors -->
+    <line class="rmt" x1="200" y1="52" x2="210" y2="82" stroke="var(--cream)" stroke-width="1.2" style="animation-duration:3s"/>
+    <line class="rmt" x1="440" y1="48" x2="448" y2="75" stroke="var(--lav)" stroke-width="1" style="animation-duration:3.5s;animation-delay:-1.2s"/>
+    <line class="rmt" x1="660" y1="50" x2="670" y2="80" stroke="var(--cream)" stroke-width="1.1" style="animation-duration:4s;animation-delay:-2.5s"/>
+    <line class="rmt" x1="100" y1="56" x2="108" y2="78" stroke="var(--sky)" stroke-width=".8" style="animation-duration:3.2s;animation-delay:-.7s"/>
+    <line class="rmt" x1="530" y1="50" x2="538" y2="76" stroke="var(--warm)" stroke-width=".9" style="animation-duration:3.8s;animation-delay:-1.8s"/>
+    <line class="rmt" x1="780" y1="53" x2="788" y2="78" stroke="var(--cream)" stroke-width="1" style="animation-duration:4.5s;animation-delay:-3.2s"/>
+  </g>
+
+  <!-- ====== WATER RIPPLES (scribbles) ====== -->
+  <!-- Flowing -->
+  <path class="rp rp1" d="M-50,50 C30,47 80,54 160,49 C240,44 300,52 380,47 C460,42 520,50 600,45 C680,40 740,48 820,43 C870,40 920,48 960,44"/>
+  <path class="rp rp2" d="M-80,62 C0,66 60,58 140,64 C220,70 280,60 360,66 C440,72 500,62 580,68 C660,74 720,64 800,70 C860,74 920,66 980,72"/>
+  <path class="rp rp3" d="M-30,75 C50,72 100,78 180,73 C260,68 320,76 400,71 C480,66 540,74 620,69 C700,64 760,72 840,67 C890,64 940,72 970,68"/>
+  <path class="rp rp4" d="M-60,88 C20,92 80,84 160,90 C240,96 300,86 380,92 C460,98 520,88 600,94 C680,100 740,90 820,96 C880,100 940,92 980,98"/>
+  <path class="rp rp5" d="M-40,100 C60,97 120,104 200,99 C280,94 340,102 420,97 C500,92 560,100 640,95 C720,90 780,98 860,93 C910,90 950,98 970,94"/>
+  <path class="rp rp6" d="M-70,112 C10,116 70,108 150,114 C230,120 290,110 370,116 C450,122 510,112 590,118 C670,124 730,114 810,120 C870,124 930,116 980,122"/>
+  <path class="rp rp7" d="M-20,55 C40,52 90,58 170,53 C250,48 310,56 390,51 C470,46 530,54 610,49 C690,44 750,52 830,47 C880,44 930,52 970,48"/>
+  <path class="rp rp8" d="M-90,125 C-10,129 50,123 130,127 C210,131 270,125 350,129 C430,133 490,127 570,131 C650,135 710,129 790,133 C850,135 910,129 980,133"/>
+
+  <!-- Static drawn-on marks -->
+  <path class="rpm" d="M50,68 C80,65 110,72 140,69" stroke="var(--rp1)" stroke-width=".7" style="animation-delay:1.2s"/>
+  <path class="rpm" d="M200,80 C230,77 260,84 290,81" stroke="var(--rp2)" stroke-width=".6" style="animation-delay:1.4s"/>
+  <path class="rpm" d="M380,72 C410,69 440,76 470,73" stroke="var(--rp3)" stroke-width=".8" style="animation-delay:1.6s"/>
+  <path class="rpm" d="M550,85 C580,82 610,89 640,86" stroke="var(--rp1)" stroke-width=".6" style="animation-delay:1.8s"/>
+  <path class="rpm" d="M720,76 C750,73 780,80 810,77" stroke="var(--rp2)" stroke-width=".7" style="animation-delay:2s"/>
+  <path class="rpm" d="M120,96 C150,93 180,100 210,97" stroke="var(--rp3)" stroke-width=".5" style="animation-delay:2.2s"/>
+  <path class="rpm" d="M300,106 C330,103 360,110 390,107" stroke="var(--rp1)" stroke-width=".6" style="animation-delay:2.4s"/>
+  <path class="rpm" d="M480,98 C510,95 540,102 570,99" stroke="var(--rp2)" stroke-width=".7" style="animation-delay:2.6s"/>
+  <path class="rpm" d="M650,110 C680,107 710,114 740,111" stroke="var(--rp3)" stroke-width=".5" style="animation-delay:2.8s"/>
+  <path class="rpm" d="M820,102 C850,99 880,106 900,103" stroke="var(--rp1)" stroke-width=".6" style="animation-delay:3s"/>
+  <path class="rpm" d="M30,118 C60,115 90,122 120,119" stroke="var(--rp2)" stroke-width=".5" style="animation-delay:3.2s"/>
+  <path class="rpm" d="M250,126 C280,123 310,130 340,127" stroke="var(--rp3)" stroke-width=".6" style="animation-delay:3.4s"/>
+
+  <!-- SHIMMER SPOTS -->
+  <circle class="sh" cx="150" cy="65" r="1.5" fill="var(--cream)" style="animation-delay:0s"/>
+  <circle class="sh" cx="320" cy="73" r="1.2" fill="var(--cream)" style="animation-delay:.8s"/>
+  <circle class="sh" cx="480" cy="58" r="1.8" fill="var(--cream)" style="animation-delay:1.6s"/>
+  <circle class="sh" cx="620" cy="69" r="1.3" fill="var(--cream)" style="animation-delay:2.4s"/>
+  <circle class="sh" cx="760" cy="62" r="1.5" fill="var(--warm)" style="animation-delay:.4s"/>
+  <circle class="sh" cx="100" cy="81" r="1" fill="var(--cream)" style="animation-delay:1.2s"/>
+  <circle class="sh" cx="400" cy="89" r="1.4" fill="var(--cream)" style="animation-delay:2s"/>
+  <circle class="sh" cx="550" cy="76" r="1.1" fill="var(--warm)" style="animation-delay:2.8s"/>
+  <circle class="sh" cx="700" cy="83" r="1.6" fill="var(--cream)" style="animation-delay:.6s"/>
+  <circle class="sh" cx="850" cy="71" r="1.2" fill="var(--cream)" style="animation-delay:1.4s"/>
+
+  <!-- LILY PADS -->
+  <ellipse class="ly" cx="180" cy="112" rx="12" ry="5" style="animation-delay:1.5s,2.5s"/>
+  <ellipse class="ly" cx="520" cy="122" rx="10" ry="4" style="animation-delay:1.8s,2.8s"/>
+  <ellipse class="ly" cx="780" cy="117" rx="11" ry="4.5" style="animation-delay:2s,3s"/>
+  <circle class="lf" cx="180" cy="109" r="2.5" style="animation-delay:1.8s,2.8s"/>
+
+  <!-- REEDS -->
+  <path class="rd" d="M30,140 Q28,115 32,90" stroke-width="1.5" style="animation-delay:.5s"/>
+  <path class="rd" d="M38,140 Q40,118 36,95" stroke-width="1.3" style="animation-delay:.7s"/>
+  <path class="rd" d="M45,140 Q43,120 47,100" stroke-width="1.2" style="animation-delay:.9s"/>
+  <path class="rd" d="M250,140 Q248,112 252,85" stroke-width="1.5" style="animation-delay:.6s"/>
+  <path class="rd" d="M258,140 Q260,116 256,92" stroke-width="1.3" style="animation-delay:.8s"/>
+  <path class="rd" d="M680,140 Q678,110 682,82" stroke-width="1.5" style="animation-delay:.5s"/>
+  <path class="rd" d="M688,140 Q690,114 686,88" stroke-width="1.3" style="animation-delay:.7s"/>
+  <path class="rd" d="M695,140 Q693,118 697,95" stroke-width="1.2" style="animation-delay:.9s"/>
+  <path class="rd" d="M860,140 Q858,115 862,90" stroke-width="1.5" style="animation-delay:.6s"/>
+  <path class="rd" d="M868,140 Q870,118 866,95" stroke-width="1.3" style="animation-delay:.8s"/>
+  <!-- Cattail heads -->
+  <ellipse class="ct" cx="32" cy="88" rx="2" ry="6" style="animation-delay:1.2s"/>
+  <ellipse class="ct" cx="252" cy="83" rx="2" ry="6" style="animation-delay:1.4s"/>
+  <ellipse class="ct" cx="682" cy="80" rx="2" ry="6" style="animation-delay:1.2s"/>
+  <ellipse class="ct" cx="862" cy="88" rx="2" ry="6" style="animation-delay:1.4s"/>
+
+  <!-- SHORE PEBBLES -->
+  <ellipse class="pb" cx="80" cy="136" rx="4" ry="2" stroke="#1a3a2a" stroke-width=".6"/>
+  <ellipse class="pb" cx="160" cy="138" rx="3" ry="1.5" stroke="#1a3a2a" stroke-width=".5" style="animation-delay:1.1s"/>
+  <ellipse class="pb" cx="350" cy="137" rx="5" ry="2.5" stroke="#1a3a2a" stroke-width=".6" style="animation-delay:1.3s"/>
+  <ellipse class="pb" cx="500" cy="139" rx="3.5" ry="1.8" stroke="#1a3a2a" stroke-width=".5" style="animation-delay:1.5s"/>
+  <ellipse class="pb" cx="620" cy="136" rx="4" ry="2" stroke="#1a3a2a" stroke-width=".6" style="animation-delay:1.7s"/>
+  <ellipse class="pb" cx="750" cy="138" rx="3" ry="1.5" stroke="#1a3a2a" stroke-width=".5" style="animation-delay:1.9s"/>
+  <ellipse class="pb" cx="900" cy="137" rx="4.5" ry="2" stroke="#1a3a2a" stroke-width=".6" style="animation-delay:2.1s"/>
+
+  <!-- ====== GRASS (hanging from top) ====== -->
+  <!-- Back -->
+  <path class="gb bs" d="M5,0 Q2,12 8,22" style="animation-delay:.2s;animation-duration:.5s,3.2s"/>
+  <path class="gb bm" d="M14,0 Q16,14 11,24" style="animation-delay:.3s;animation-duration:.5s,2.8s"/>
+  <path class="gb bs" d="M23,0 Q20,13 26,23" style="animation-delay:.4s;animation-duration:.5s,3.5s"/>
+  <path class="gb bm" d="M55,0 Q52,14 58,24" style="animation-delay:.2s;animation-duration:.5s,3.3s"/>
+  <path class="gb bs" d="M100,0 Q103,15 98,25" style="animation-delay:.5s;animation-duration:.5s,3.1s"/>
+  <path class="gb bm" d="M160,0 Q157,13 163,23" style="animation-delay:.4s;animation-duration:.5s,3.6s"/>
+  <path class="gb bs" d="M235,0 Q232,13 238,23" style="animation-delay:.2s;animation-duration:.5s,2.9s"/>
+  <path class="gb bm" d="M310,0 Q307,13 313,23" style="animation-delay:.4s;animation-duration:.5s,3.4s"/>
+  <path class="gb bs" d="M385,0 Q382,13 388,23" style="animation-delay:.2s;animation-duration:.5s,3s"/>
+  <path class="gb bm" d="M460,0 Q457,13 463,23" style="animation-delay:.4s;animation-duration:.5s,3.5s"/>
+  <path class="gb bs" d="M540,0 Q537,13 543,23" style="animation-delay:.2s;animation-duration:.5s,2.7s"/>
+  <path class="gb bm" d="M615,0 Q612,13 618,23" style="animation-delay:.4s;animation-duration:.5s,3.2s"/>
+  <path class="gb bs" d="M695,0 Q692,13 698,23" style="animation-delay:.2s;animation-duration:.5s,3.6s"/>
+  <path class="gb bm" d="M775,0 Q772,13 778,23" style="animation-delay:.4s;animation-duration:.5s,2.8s"/>
+  <path class="gb bs" d="M855,0 Q852,13 858,23" style="animation-delay:.2s;animation-duration:.5s,3.3s"/>
+  <!-- Mid -->
+  <path class="gm bl" d="M8,0 Q3,18 10,35" style="animation-delay:.3s;animation-duration:.6s,3s"/>
+  <path class="gm bt" d="M32,0 Q28,16 35,34" style="animation-delay:.5s;animation-duration:.6s,3.4s"/>
+  <path class="gm bw" d="M76,0 Q80,20 73,38" style="animation-delay:.4s;animation-duration:.6s,2.9s"/>
+  <path class="gm bl" d="M140,0 Q144,20 137,38" style="animation-delay:.5s;animation-duration:.6s,3.3s"/>
+  <path class="gm bt" d="M218,0 Q222,20 215,38" style="animation-delay:.3s;animation-duration:.6s,3.1s"/>
+  <path class="gm bw" d="M295,0 Q299,20 292,38" style="animation-delay:.4s;animation-duration:.6s,3.5s"/>
+  <path class="gm bl" d="M372,0 Q376,20 369,38" style="animation-delay:.5s;animation-duration:.6s,2.7s"/>
+  <path class="gm bt" d="M445,0 Q449,20 442,38" style="animation-delay:.3s;animation-duration:.6s,3.4s"/>
+  <path class="gm bw" d="M525,0 Q529,20 522,38" style="animation-delay:.4s;animation-duration:.6s,3s"/>
+  <path class="gm bl" d="M602,0 Q606,20 599,38" style="animation-delay:.5s;animation-duration:.6s,3.2s"/>
+  <path class="gm bt" d="M678,0 Q682,20 675,38" style="animation-delay:.3s;animation-duration:.6s,3.6s"/>
+  <path class="gm bw" d="M758,0 Q762,20 755,38" style="animation-delay:.4s;animation-duration:.6s,2.8s"/>
+  <path class="gm bl" d="M838,0 Q842,20 835,38" style="animation-delay:.5s;animation-duration:.6s,3.3s"/>
+  <!-- Front -->
+  <path class="gf bl" d="M5,0 Q-2,25 8,50" style="animation-delay:.3s;animation-duration:.7s,2.8s"/>
+  <path class="gf bs" d="M20,0 Q24,28 14,55" style="animation-delay:.5s;animation-duration:.7s,3.2s"/>
+  <path class="gf bt" d="M42,0 Q48,30 38,58" style="animation-delay:.4s;animation-duration:.7s,2.6s"/>
+  <path class="gf bw" d="M78,0 Q72,18 80,42" style="animation-delay:.6s;animation-duration:.7s,3.4s"/>
+  <path class="gf bl" d="M114,0 Q120,28 110,55" style="animation-delay:.3s;animation-duration:.7s,3s"/>
+  <path class="gf bs" d="M168,0 Q162,16 170,40" style="animation-delay:.5s;animation-duration:.7s,3.6s"/>
+  <path class="gf bt" d="M240,0 Q234,14 242,38" style="animation-delay:.4s;animation-duration:.7s,2.7s"/>
+  <path class="gf bw" d="M318,0 Q324,28 314,55" style="animation-delay:.6s;animation-duration:.7s,3.3s"/>
+  <path class="gf bl" d="M395,0 Q389,12 397,36" style="animation-delay:.3s;animation-duration:.7s,3.1s"/>
+  <path class="gf bs" d="M468,0 Q474,28 464,55" style="animation-delay:.5s;animation-duration:.7s,3.5s"/>
+  <path class="gf bt" d="M548,0 Q542,10 550,34" style="animation-delay:.4s;animation-duration:.7s,2.9s"/>
+  <path class="gf bw" d="M625,0 Q631,28 621,55" style="animation-delay:.6s;animation-duration:.7s,3.2s"/>
+  <path class="gf bl" d="M702,0 Q696,14 704,38" style="animation-delay:.3s;animation-duration:.7s,3.6s"/>
+  <path class="gf bs" d="M782,0 Q788,28 778,55" style="animation-delay:.5s;animation-duration:.7s,2.5s"/>
+  <path class="gf bt" d="M862,0 Q856,16 864,40" style="animation-delay:.4s;animation-duration:.7s,3.4s"/>
+</svg>
