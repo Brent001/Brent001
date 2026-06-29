@@ -1,134 +1,274 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200" width="900" height="200">
-  <defs>
-    <filter id="r" x="-3%" y="-3%" width="106%" height="106%">
-      <feTurbulence type="fractalNoise" baseFrequency="0.028" numOctaves="4" seed="12" result="n"/>
-      <feDisplacementMap in="SourceGraphic" in2="n" scale="2" xChannelSelector="R" yChannelSelector="G"/>
-    </filter>
-    <style>
-      .ln { fill: none; stroke-linecap: round; stroke-linejoin: round; }
-      .w1 { stroke: #D8D2C8; }
-      .w2 { stroke: #B0AAA0; }
-      .w3 { stroke: #E8E4DC; }
+<div align="center">
 
-      .bo { stroke-dasharray: 2220; stroke-dashoffset: 2220; animation: d 2s cubic-bezier(.5,0,.5,1) 0s forwards; }
-      .bi { stroke-dasharray: 2100; stroke-dashoffset: 2100; animation: d 2s cubic-bezier(.5,0,.5,1) 0.18s forwards; }
+<!-- NURTURE HEADER SVG: scribble-draw animation, pastel sky + meadow -->
+<img src="https://raw.githubusercontent.com/Brent001/Brent001/main/header.svg" alt="header" />
 
-      .bm { stroke-dasharray: 310; stroke-dashoffset: 310; animation: d 1.2s ease 0.2s forwards; }
-      .bc { stroke-dasharray: 140; stroke-dashoffset: 140; animation: d 0.7s ease 0.85s forwards; }
-      .bt { stroke-dasharray: 290; stroke-dashoffset: 290; animation: d 1.1s ease 0.3s forwards; }
+<!-- If header.svg isn't pushed yet, this fallback banner still conveys the vibe -->
 
-      .lv { stroke-dasharray: 110; stroke-dashoffset: 110; }
-      .la { animation: d .44s ease 0.75s forwards; }
-      .lb { animation: d .44s ease 0.90s forwards; }
-      .lc { animation: d .44s ease 1.05s forwards; }
-      .ld { animation: d .44s ease 1.18s forwards; }
-      .le { animation: d .44s ease 1.30s forwards; }
-      .lf { animation: d .44s ease 1.42s forwards; }
-      .lg { animation: d .44s ease 1.55s forwards; }
-      .lh { animation: d .44s ease 0.80s forwards; }
-      .li { animation: d .44s ease 0.95s forwards; }
+</div>
 
-      .bd { stroke-dasharray: 65; stroke-dashoffset: 65; }
-      .b1 { animation: d .55s ease 1.35s forwards; }
-      .b2 { animation: d .55s ease 1.55s forwards; }
-      .b3 { animation: d .55s ease 1.75s forwards; }
-      .b4 { animation: d .55s ease 1.95s forwards; }
-      .b5 { animation: d .55s ease 2.05s forwards; }
-      .b6 { animation: d .55s ease 2.18s forwards; }
-      .b7 { animation: d .55s ease 2.30s forwards; }
-      .b8 { animation: d .55s ease 1.45s forwards; }
+---
 
-      .sp { stroke-dasharray: 330; stroke-dashoffset: 330; animation: d .7s ease 2.4s forwards; }
+<div align="center">
 
-      .t1 { opacity: 0; animation: fi .9s ease 2.5s forwards; }
-      .t2 { opacity: 0; animation: fi .8s ease 3.0s forwards; }
-      .t3 { opacity: 0; animation: fi .7s ease 3.4s forwards; }
+<!-- SCRIBBLE TITLE SVG — embed directly as a data URI image via GitHub's SVG support -->
 
-      @keyframes d { to { stroke-dashoffset: 0; } }
-      @keyframes fi { to { opacity: 1; } }
-    </style>
-  </defs>
+<picture>
+  <img src="https://readme-typing-svg.demolab.com?font=Caveat&weight=700&size=38&duration=3500&pause=800&color=7BBFCC&center=true&vCenter=true&multiline=false&width=600&height=70&lines=ブレント+//+Brent+Abrazaldo" alt="Typing SVG" />
+</picture>
 
-  <rect width="900" height="200" fill="#0D1117"/>
+<picture>
+  <img src="https://readme-typing-svg.demolab.com?font=Caveat&weight=400&size=22&duration=2800&pause=1200&color=9DB8A4&center=true&vCenter=true&width=600&height=50&lines=CS+Student+%E2%80%94+builder+of+small+things;web+dev+%2F%2F+parser+%2F%2F+open+source;%E3%82%B3%E3%83%BC%E3%83%89%E3%82%92%E6%9B%B8%E3%81%8F%E3%80%81%E9%9F%B3%E6%A5%BD%E3%82%92%E8%81%B4%E3%81%8F" alt="Subheading" />
+</picture>
 
-  <!-- Outer frame -->
-  <rect x="11" y="11" width="878" height="178" rx="3"
-        class="ln w2 bo" stroke-width="1.4" filter="url(#r)"/>
-  <!-- Inner frame -->
-  <rect x="19" y="19" width="862" height="162" rx="2"
-        class="ln w2 bi" stroke-width="0.75" opacity="0.45" filter="url(#r)"/>
+</div>
 
-  <!-- Main branch: bottom-left rising upward -->
-  <path d="M 35 194 C 40 178 46 161 53 145 C 59 129 66 113 73 97
-           C 80 81 86 65 92 49 C 96 37 97 27 97 24"
-        class="ln w1 bm" stroke-width="1.3" filter="url(#r)"/>
+---
 
-  <!-- Secondary twig off main branch -->
-  <path d="M 58 140 C 54 127 52 113 56 100"
-        class="ln w2 bc" stroke-width="0.95" filter="url(#r)"/>
+<!-- ╔══════════════════════════════════════════════╗ -->
+<!-- ║        NURTURE SCRIBBLE DIVIDER SVG          ║ -->
+<!-- ╚══════════════════════════════════════════════╝ -->
 
-  <!-- Leaves off main branch -->
-  <path d="M 55 142 C 46 135 38 130 32 125" class="ln w1 lv la" stroke-width="1"   filter="url(#r)"/>
-  <path d="M 55 138 C 63 132 71 129 78 125" class="ln w1 lv la" stroke-width="1"   filter="url(#r)"/>
-  <path d="M 64 117 C 55 111 47 107 41 102" class="ln w1 lv lb" stroke-width="1"   filter="url(#r)"/>
-  <path d="M 68 106 C 77 100 85 97 92 93"   class="ln w1 lv lc" stroke-width="1"   filter="url(#r)"/>
-  <path d="M 77 82  C 67 76 60 72 55 68"    class="ln w1 lv ld" stroke-width="0.95" filter="url(#r)"/>
-  <path d="M 83 68  C 91 62 98 60 104 56"   class="ln w1 lv le" stroke-width="0.95" filter="url(#r)"/>
-  <path d="M 90 48  C 82 42 78 35 76 29"    class="ln w1 lv lf" stroke-width="0.9"  filter="url(#r)"/>
-  <path d="M 57 132 C 48 125 42 120 36 116" class="ln w2 lv lg" stroke-width="0.85" filter="url(#r)"/>
+<div align="center">
 
-  <!-- Top-right corner branch -->
-  <path d="M 862 22 C 854 35 848 50 842 64 C 836 77 832 90 828 102"
-        class="ln w1 bt" stroke-width="1.1" filter="url(#r)"/>
-  <path d="M 844 62 C 852 56 860 53 866 49" class="ln w1 lv lh" stroke-width="0.9" filter="url(#r)"/>
-  <path d="M 832 89 C 840 83 848 81 855 77" class="ln w1 lv li" stroke-width="0.9" filter="url(#r)"/>
-  <path d="M 826 102 C 818 108 812 114 810 120" class="ln w2 lv li" stroke-width="0.85" filter="url(#r)"/>
-
-  <!-- Bird flock: flying upper-right, fading into distance -->
-  <!-- Lead bird (largest, lowest) -->
-  <path d="M 644 98 Q 662 85 662 98 Q 662 85 680 98"
-        class="ln w3 bd b8" stroke-width="1.9"/>
-  <!-- 2nd -->
-  <path d="M 676 72 Q 692 60 692 72 Q 692 60 708 72"
-        class="ln w3 bd b1" stroke-width="1.75"/>
-  <!-- 3rd -->
-  <path d="M 703 53 Q 717 42 717 53 Q 717 42 731 53"
-        class="ln w3 bd b2" stroke-width="1.55"/>
-  <!-- 4th -->
-  <path d="M 729 38 Q 741 28 741 38 Q 741 28 753 38"
-        class="ln w3 bd b3" stroke-width="1.35"/>
-  <!-- Side bird -->
-  <path d="M 718 76 Q 729 66 729 76 Q 729 66 740 76"
-        class="ln w3 bd b4" stroke-width="1.45"/>
-  <!-- Small bird -->
-  <path d="M 746 59 Q 756 50 756 59 Q 756 50 766 59"
-        class="ln w3 bd b5" stroke-width="1.2"/>
-  <!-- Tiny bird -->
-  <path d="M 760 42 Q 768 35 768 42 Q 768 35 776 42"
-        class="ln w3 bd b6" stroke-width="1.1"/>
-  <!-- Highest/furthest tiny bird -->
-  <path d="M 746 26 Q 753 20 753 26 Q 753 20 760 26"
-        class="ln w3 bd b7" stroke-width="1"/>
-
-  <!-- Separator line (hand-drawn) -->
-  <path d="M 236 116 C 274 114 328 118 390 116 C 452 114 506 118 544 116"
-        class="ln w2 sp" stroke-width="0.8" filter="url(#r)" opacity="0.65"/>
-
-  <!-- Main title: ブレント -->
-  <text x="390" y="100" text-anchor="middle"
-        font-family="'Noto Serif JP','Hiragino Mincho Pro','Yu Mincho','Times New Roman',serif"
-        font-size="44" font-weight="300"
-        fill="#E8E4DC" class="t1">ブレント</text>
-
-  <!-- Subtitle -->
-  <text x="390" y="144" text-anchor="middle"
-        font-family="'Courier New',Courier,monospace"
-        font-size="11.5" letter-spacing="5.5"
-        fill="#7A9A7A" class="t2">Brent001 · 開発者</text>
-
-  <!-- Tag line -->
-  <text x="390" y="162" text-anchor="middle"
-        font-family="Arial,Helvetica,sans-serif"
-        font-size="9.5" letter-spacing="3"
-        fill="#3E5A3E" class="t3">cs student · builder · 作る者</text>
+<svg viewBox="0 0 800 60" width="700" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .scribble-line {
+      fill: none;
+      stroke: #a8d8ea;
+      stroke-width: 2.2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-dasharray: 900;
+      stroke-dashoffset: 900;
+      animation: draw-line 2.4s ease forwards;
+    }
+    .scribble-line2 {
+      fill: none;
+      stroke: #b8e0d2;
+      stroke-width: 1.4;
+      stroke-linecap: round;
+      stroke-dasharray: 600;
+      stroke-dashoffset: 600;
+      animation: draw-line 2.8s 0.3s ease forwards;
+    }
+    .dot {
+      fill: #d6c9e8;
+      opacity: 0;
+      animation: pop-in 0.4s ease forwards;
+    }
+    @keyframes draw-line {
+      to { stroke-dashoffset: 0; }
+    }
+    @keyframes pop-in {
+      0%   { opacity: 0; r: 0; }
+      80%  { opacity: 1; r: 5; }
+      100% { opacity: 0.7; r: 3.5; }
+    }
+  </style>
+  <!-- main wavy scribble -->
+  <path class="scribble-line"
+    d="M10,35 C60,15 110,50 160,30 C210,10 250,45 310,32
+       C360,20 410,48 460,28 C510,10 560,44 620,30
+       C670,18 720,42 790,32" />
+  <!-- secondary softer wave -->
+  <path class="scribble-line2"
+    d="M10,42 C70,55 130,28 200,40 C270,52 330,22 400,38
+       C470,54 540,24 610,38 C680,52 740,30 790,40" />
+  <!-- accent dots -->
+  <circle class="dot" cx="160"  cy="30"  r="3.5" style="animation-delay:1.0s" />
+  <circle class="dot" cx="310"  cy="32"  r="3.5" style="animation-delay:1.4s" />
+  <circle class="dot" cx="460"  cy="28"  r="3.5" style="animation-delay:1.8s" />
+  <circle class="dot" cx="620"  cy="30"  r="3.5" style="animation-delay:2.1s" />
 </svg>
+
+</div>
+
+---
+
+## &nbsp;について &nbsp;·&nbsp; about me
+
+```
+  名前  ///  Brent Abrazaldo
+  場所  ///  Philippines 🇵🇭
+  分野  ///  CS Student · Web Dev · Open Source
+  今    ///  building things that feel alive
+```
+
+> *「何かを作り続けることに意味がある」*
+> &nbsp;— *there is meaning in continuing to create something.*
+
+---
+
+## &nbsp;スキル &nbsp;·&nbsp; tools & tech
+
+<div align="center">
+
+<!-- Tech stack badges — muted Nurture palette tones -->
+
+![TypeScript](https://img.shields.io/badge/TypeScript-%23a8d8ea?style=flat-square&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-%23b8e0d2?style=flat-square&logo=javascript&logoColor=333)
+![Svelte](https://img.shields.io/badge/Svelte-%23d6c9e8?style=flat-square&logo=svelte&logoColor=white)
+![Deno](https://img.shields.io/badge/Deno-%23a8d8ea?style=flat-square&logo=deno&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-%23b8e0d2?style=flat-square&logo=nodedotjs&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-%23d6c9e8?style=flat-square&logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-%23a8d8ea?style=flat-square&logo=mysql&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind-%23b8e0d2?style=flat-square&logo=tailwindcss&logoColor=white)
+![Git](https://img.shields.io/badge/Git-%23d6c9e8?style=flat-square&logo=git&logoColor=white)
+
+</div>
+
+---
+
+<!-- SCRIBBLE MEADOW DIVIDER SVG -->
+
+<div align="center">
+
+<svg viewBox="0 0 800 80" width="700" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .grass { fill: none; stroke: #b8e0d2; stroke-width: 1.8; stroke-linecap: round; opacity: 0; animation: grow-up 0.6s ease forwards; }
+    .cloud { fill: #a8d8ea; opacity: 0; animation: float-in 1s ease forwards; }
+    @keyframes grow-up {
+      from { transform: scaleY(0); transform-origin: bottom; opacity: 0; }
+      to   { transform: scaleY(1); transform-origin: bottom; opacity: 0.7; }
+    }
+    @keyframes float-in {
+      from { opacity: 0; transform: translateY(6px); }
+      to   { opacity: 0.18; transform: translateY(0); }
+    }
+  </style>
+  <!-- soft cloud shapes -->
+  <ellipse class="cloud" cx="120" cy="30" rx="60" ry="22" style="animation-delay:0.1s" />
+  <ellipse class="cloud" cx="420" cy="22" rx="80" ry="18" style="animation-delay:0.3s" />
+  <ellipse class="cloud" cx="680" cy="32" rx="55" ry="18" style="animation-delay:0.5s" />
+  <!-- grass blades -->
+  <line class="grass" x1="50"  y1="70" x2="48"  y2="50" style="animation-delay:0.2s" />
+  <line class="grass" x1="55"  y1="70" x2="58"  y2="48" style="animation-delay:0.3s" />
+  <line class="grass" x1="60"  y1="70" x2="62"  y2="52" style="animation-delay:0.4s" />
+  <line class="grass" x1="200" y1="70" x2="198" y2="52" style="animation-delay:0.5s" />
+  <line class="grass" x1="205" y1="70" x2="208" y2="49" style="animation-delay:0.6s" />
+  <line class="grass" x1="350" y1="70" x2="348" y2="54" style="animation-delay:0.4s" />
+  <line class="grass" x1="355" y1="70" x2="358" y2="50" style="animation-delay:0.5s" />
+  <line class="grass" x1="500" y1="70" x2="498" y2="52" style="animation-delay:0.3s" />
+  <line class="grass" x1="505" y1="70" x2="508" y2="48" style="animation-delay:0.4s" />
+  <line class="grass" x1="650" y1="70" x2="648" y2="54" style="animation-delay:0.5s" />
+  <line class="grass" x1="655" y1="70" x2="658" y2="50" style="animation-delay:0.6s" />
+  <line class="grass" x1="740" y1="70" x2="738" y2="53" style="animation-delay:0.3s" />
+  <line class="grass" x1="745" y1="70" x2="748" y2="49" style="animation-delay:0.4s" />
+</svg>
+
+</div>
+
+---
+
+## &nbsp;プロジェクト &nbsp;·&nbsp; featured work
+
+<div align="center">
+
+[![kaido_backup](https://github-readme-stats.vercel.app/api/pin/?username=Brent001&repo=kaido_backup&theme=nord&bg_color=0d1117&border_color=a8d8ea&title_color=a8d8ea&text_color=c9d1d9&icon_color=b8e0d2)](https://github.com/Brent001/kaido_backup)
+&nbsp;&nbsp;
+[![Portfol.io](https://github-readme-stats.vercel.app/api/pin/?username=Brent001&repo=Portfol.io&theme=nord&bg_color=0d1117&border_color=b8e0d2&title_color=b8e0d2&text_color=c9d1d9&icon_color=d6c9e8)](https://github.com/Brent001/Portfol.io)
+
+[![Kaguya_backup](https://github-readme-stats.vercel.app/api/pin/?username=Brent001&repo=Kaguya_backup&theme=nord&bg_color=0d1117&border_color=d6c9e8&title_color=d6c9e8&text_color=c9d1d9&icon_color=a8d8ea)](https://github.com/Brent001/Kaguya_backup)
+&nbsp;&nbsp;
+[![musify](https://github-readme-stats.vercel.app/api/pin/?username=Brent001&repo=musify&theme=nord&bg_color=0d1117&border_color=a8d8ea&title_color=a8d8ea&text_color=c9d1d9&icon_color=b8e0d2)](https://github.com/Brent001/musify)
+
+</div>
+
+---
+
+## &nbsp;統計 &nbsp;·&nbsp; stats
+
+<div align="center">
+
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=Brent001&show_icons=true&theme=nord&bg_color=0d1117&border_color=a8d8ea&title_color=a8d8ea&text_color=8b9cb6&icon_color=b8e0d2&hide_border=false&count_private=true" />
+&nbsp;
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Brent001&layout=compact&theme=nord&bg_color=0d1117&border_color=d6c9e8&title_color=d6c9e8&text_color=8b9cb6&hide_border=false&langs_count=6" />
+
+<br/>
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Brent001&theme=dark&background=0d1117&border=a8d8ea&ring=7BBFCC&fire=d6c9e8&currStreakNum=a8d8ea&sideNums=b8e0d2&currStreakLabel=9DB8A4&sideLabels=9DB8A4&dates=5a6a7a" />
+
+</div>
+
+---
+
+<!-- SCRIBBLE FOOTER SVG — hand-drawn stars & dots -->
+
+<div align="center">
+
+<svg viewBox="0 0 800 50" width="700" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .star-line { fill: none; stroke: #d6c9e8; stroke-width: 1.5; stroke-linecap: round; stroke-dasharray: 40; stroke-dashoffset: 40; animation: draw-line 1.2s ease forwards; }
+    .star-dot  { fill: #a8d8ea; opacity: 0; animation: twinkle 2s ease infinite; }
+    @keyframes draw-line { to { stroke-dashoffset: 0; } }
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.2; r: 2; }
+      50%       { opacity: 0.9; r: 3.5; }
+    }
+  </style>
+  <!-- scribble star left -->
+  <line class="star-line" x1="80"  y1="15" x2="80"  y2="35" style="animation-delay:0.0s"/>
+  <line class="star-line" x1="70"  y1="25" x2="90"  y2="25" style="animation-delay:0.1s"/>
+  <line class="star-line" x1="73"  y1="18" x2="87"  y2="32" style="animation-delay:0.2s"/>
+  <line class="star-line" x1="87"  y1="18" x2="73"  y2="32" style="animation-delay:0.3s"/>
+  <!-- scribble star mid -->
+  <line class="star-line" x1="400" y1="12" x2="400" y2="38" style="animation-delay:0.4s"/>
+  <line class="star-line" x1="387" y1="25" x2="413" y2="25" style="animation-delay:0.5s"/>
+  <line class="star-line" x1="391" y1="16" x2="409" y2="34" style="animation-delay:0.6s"/>
+  <line class="star-line" x1="409" y1="16" x2="391" y2="34" style="animation-delay:0.7s"/>
+  <!-- scribble star right -->
+  <line class="star-line" x1="720" y1="15" x2="720" y2="35" style="animation-delay:0.3s"/>
+  <line class="star-line" x1="710" y1="25" x2="730" y2="25" style="animation-delay:0.4s"/>
+  <line class="star-line" x1="713" y1="18" x2="727" y2="32" style="animation-delay:0.5s"/>
+  <line class="star-line" x1="727" y1="18" x2="713" y2="32" style="animation-delay:0.6s"/>
+  <!-- twinkling dots scattered -->
+  <circle class="star-dot" cx="160" cy="20" r="2.5" style="animation-delay:0.0s"/>
+  <circle class="star-dot" cx="240" cy="35" r="2"   style="animation-delay:0.5s"/>
+  <circle class="star-dot" cx="320" cy="15" r="3"   style="animation-delay:1.0s"/>
+  <circle class="star-dot" cx="480" cy="38" r="2"   style="animation-delay:0.3s"/>
+  <circle class="star-dot" cx="560" cy="12" r="2.5" style="animation-delay:0.8s"/>
+  <circle class="star-dot" cx="640" cy="30" r="2"   style="animation-delay:0.2s"/>
+</svg>
+
+</div>
+
+<div align="center">
+
+*「空を見上げてみて」*&emsp;·&emsp;look at the sky
+
+&nbsp;
+
+[![GitHub](https://img.shields.io/badge/github-Brent001-a8d8ea?style=flat-square&logo=github&logoColor=white)](https://github.com/Brent001)
+
+</div>
+
+---
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SETUP NOTES — read before pushing
+     ═══════════════════════════════════════════════════════════════
+
+  1. REPO:  Create a public repo named exactly "Brent001" if it doesn't exist.
+            Place this file as README.md at the root.
+
+  2. OPTIONAL HEADER SVG (for the top banner):
+     Create header.svg in the same repo with the scribble banner below.
+     Reference it as:
+       ![header](header.svg)
+     (GitHub serves SVGs from the same repo with animations intact.)
+
+  3. FONTS: The typing SVG uses "Caveat" (Google Fonts handwriting).
+            It renders via demolab's hosted service — no extra setup.
+
+  4. STATS: github-readme-stats and streak-stats work without a token
+            for public repos. If rate-limited, self-host or add a VERCEL_TOKEN.
+
+  5. COLORS USED (Porter Robinson Nurture palette):
+       Sky blue    #a8d8ea   — main accent
+       Sage green  #b8e0d2   — secondary
+       Lavender    #d6c9e8   — tertiary / stars
+       Muted teal  #7BBFCC   — typing cursor / ring
+       Dark base   #0d1117   — GitHub dark bg
+
+═══════════════════════════════════════════════════════════════ -->
