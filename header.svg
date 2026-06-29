@@ -6,7 +6,6 @@
       --lav:    #d6c9e8;
       --cream:  #fef9ef;
       --teal:   #7bbfcc;
-      --dusk:   #8fa9b5;
       --ink:    #1e2f3a;
       --aurora: #5ec4a8;
       --aurora2:#7b6fba;
@@ -15,15 +14,31 @@
 
     .bg { fill: url(#nurtureBg); }
 
-    /* ── Aurora layers ── */
+    /* ── Aurora ── */
     .aurora {
       fill: none; stroke-linecap: round; stroke-linejoin: round;
       opacity: 0;
       animation: aurora-in 2s ease forwards, aurora-breathe 6s 2s ease-in-out infinite;
     }
-    .aurora1 { stroke: var(--aurora); stroke-width: 18; opacity: 0; filter: blur(8px); }
-    .aurora2 { stroke: var(--aurora2); stroke-width: 14; opacity: 0; filter: blur(10px); animation-delay: 0.3s, 2.3s; }
-    .aurora3 { stroke: var(--teal); stroke-width: 10; opacity: 0; filter: blur(6px); animation-delay: 0.6s, 2.6s; }
+    .aurora1 { stroke: var(--aurora); stroke-width: 18; filter: blur(8px); }
+    .aurora2 { stroke: var(--aurora2); stroke-width: 14; filter: blur(10px); animation-delay: 0.3s, 2.3s; }
+    .aurora3 { stroke: var(--teal); stroke-width: 10; filter: blur(6px); animation-delay: 0.6s, 2.6s; }
+
+    /* ── Wind scribbles — continuous flowing lines ── */
+    .wind {
+      fill: none; stroke-linecap: round; stroke-dasharray: 900 1400;
+      stroke-dashoffset: 900;
+      animation: wind-flow linear infinite;
+      opacity: 0.18;
+    }
+    .wind1 { stroke: var(--sky); stroke-width: 1.6; animation-duration: 8s; }
+    .wind2 { stroke: var(--lav); stroke-width: 1.2; animation-duration: 10s; animation-delay: -3s; opacity: 0.12; }
+    .wind3 { stroke: var(--cream); stroke-width: 0.8; animation-duration: 7s; animation-delay: -5s; opacity: 0.1; }
+    .wind4 { stroke: var(--sage); stroke-width: 1.4; animation-duration: 12s; animation-delay: -7s; opacity: 0.14; }
+    .wind5 { stroke: var(--sky); stroke-width: 1.0; animation-duration: 9s; animation-delay: -2s; opacity: 0.1; }
+    .wind6 { stroke: var(--lav); stroke-width: 0.7; animation-duration: 11s; animation-delay: -8s; opacity: 0.08; }
+    .wind7 { stroke: var(--cream); stroke-width: 1.1; animation-duration: 8.5s; animation-delay: -4s; opacity: 0.12; }
+    .wind8 { stroke: var(--sage); stroke-width: 0.9; animation-duration: 13s; animation-delay: -6s; opacity: 0.1; }
 
     /* ── Horizon scribbles ── */
     .horizon {
@@ -41,13 +56,8 @@
       stroke-linecap: round; stroke-dasharray: 700; stroke-dashoffset: 700;
       animation: draw 2.5s 1.0s ease forwards;
     }
-    .horizon4 {
-      fill: none; stroke: var(--warm); stroke-width: 0.6; opacity: 0;
-      stroke-linecap: round; stroke-dasharray: 600; stroke-dashoffset: 600;
-      animation: draw 2.2s 1.3s ease forwards;
-    }
 
-    /* ── Cloud scribbles ── */
+    /* ── Cloud scribbles with drift ── */
     .cloud-stroke {
       fill: none; stroke: var(--sky); stroke-width: 1.4; stroke-linecap: round;
       stroke-dasharray: 300; stroke-dashoffset: 300;
@@ -56,44 +66,29 @@
     .cloud-inner {
       fill: none; stroke: var(--lav); stroke-width: 0.8; stroke-linecap: round;
       stroke-dasharray: 200; stroke-dashoffset: 200;
-      animation: draw 1.5s ease forwards;
-      opacity: 0.5;
+      animation: draw 1.5s ease forwards; opacity: 0.5;
     }
-    .cloud-drift1 { animation: draw 1.8s ease forwards, drift1 20s 2s ease-in-out infinite; }
-    .cloud-drift2 { animation: draw 1.8s 0.3s ease forwards, drift2 25s 2.3s ease-in-out infinite; }
-    .cloud-drift3 { animation: draw 1.8s 0.6s ease forwards, drift3 18s 2.6s ease-in-out infinite; }
-    .cloud-drift4 { animation: draw 1.5s 0.8s ease forwards, drift1 22s 2.8s ease-in-out infinite; }
-    .cloud-inner-d1 { animation: draw 1.5s 0.4s ease forwards, drift1 20s 2.4s ease-in-out infinite; }
-    .cloud-inner-d2 { animation: draw 1.5s 0.7s ease forwards, drift2 25s 2.7s ease-in-out infinite; }
+    .cd1 { animation: draw 1.8s ease forwards, drift1 20s 2s ease-in-out infinite; }
+    .cd2 { animation: draw 1.8s 0.3s ease forwards, drift2 25s 2.3s ease-in-out infinite; }
+    .cd3 { animation: draw 1.8s 0.6s ease forwards, drift3 18s 2.6s ease-in-out infinite; }
+    .cid1 { animation: draw 1.5s 0.4s ease forwards, drift1 20s 2.4s ease-in-out infinite; }
+    .cid2 { animation: draw 1.5s 0.7s ease forwards, drift2 25s 2.7s ease-in-out infinite; }
 
-    /* ── Grass blades (curved paths) ── */
+    /* ── Grass blades — prominent, swaying continuously ── */
     .blade {
-      stroke: var(--sage); stroke-width: 1.6; stroke-linecap: round;
-      fill: none; opacity: 0;
-      stroke-dasharray: 40; stroke-dashoffset: 40;
-      animation: draw 0.6s ease forwards, sway 3s ease-in-out infinite;
+      stroke-width: 2.2; stroke-linecap: round; fill: none;
+      opacity: 0;
+      stroke-dasharray: 50; stroke-dashoffset: 50;
+      animation: draw 0.6s ease forwards, sway continuous ease-in-out infinite;
       transform-origin: bottom center;
     }
-    .blade-dark {
-      stroke: #6aab8e; stroke-width: 1.4;
-    }
-    .blade-light {
-      stroke: #c8edd8; stroke-width: 1.2;
-    }
-    .blade-teal {
-      stroke: var(--teal); stroke-width: 1.3;
-    }
+    .blade-sage  { stroke: #8dd4b8; }
+    .blade-dark  { stroke: #5a9e7a; }
+    .blade-light { stroke: #c0f0d8; }
+    .blade-teal  { stroke: #6bc4b0; }
+    .blade-warm  { stroke: #a0c890; }
 
-    /* ── Scribble birds ── */
-    .bird {
-      fill: none; stroke: var(--cream); stroke-width: 1; stroke-linecap: round;
-      stroke-dasharray: 30; stroke-dashoffset: 30;
-      animation: draw 0.8s ease forwards, bird-fly 12s 1s ease-in-out infinite;
-      opacity: 0.5;
-    }
-    .bird2 { animation: draw 0.8s 0.3s ease forwards, bird-fly2 15s 1.3s ease-in-out infinite; }
-
-    /* ── Moon scribble ── */
+    /* ── Moon ── */
     .moon-scribble {
       fill: none; stroke: var(--cream); stroke-width: 1.2; stroke-linecap: round;
       stroke-dasharray: 200; stroke-dashoffset: 200;
@@ -106,8 +101,26 @@
     .moon-scratch {
       fill: none; stroke: var(--warm); stroke-width: 0.5; stroke-linecap: round;
       stroke-dasharray: 15; stroke-dashoffset: 15;
-      animation: draw 0.5s 1.5s ease forwards;
-      opacity: 0.4;
+      animation: draw 0.5s 1.5s ease forwards; opacity: 0.4;
+    }
+
+    /* ── Meteors — continuous shower ── */
+    .meteor {
+      fill: none; stroke-linecap: round; opacity: 0;
+      animation: meteor-streak linear infinite;
+    }
+    .m1 { stroke: var(--cream); stroke-width: 1.4; stroke-dasharray: 50 200; animation-duration: 3s; }
+    .m2 { stroke: var(--lav); stroke-width: 1.0; stroke-dasharray: 35 180; animation-duration: 3.5s; animation-delay: -1.2s; }
+    .m3 { stroke: var(--cream); stroke-width: 1.2; stroke-dasharray: 45 220; animation-duration: 4s; animation-delay: -2.5s; }
+    .m4 { stroke: var(--sky); stroke-width: 0.8; stroke-dasharray: 30 200; animation-duration: 3.2s; animation-delay: -0.7s; }
+    .m5 { stroke: var(--warm); stroke-width: 1.0; stroke-dasharray: 40 210; animation-duration: 3.8s; animation-delay: -1.8s; }
+    .m6 { stroke: var(--cream); stroke-width: 0.7; stroke-dasharray: 25 190; animation-duration: 4.5s; animation-delay: -3.2s; }
+    .m7 { stroke: var(--lav); stroke-width: 0.9; stroke-dasharray: 32 205; animation-duration: 3.4s; animation-delay: -0.3s; }
+
+    /* ── Fireflies ── */
+    .firefly {
+      fill: var(--warm); opacity: 0;
+      animation: firefly-glow 4s ease-in-out infinite;
     }
 
     /* ── Floating particles ── */
@@ -115,39 +128,35 @@
       fill: var(--lav); opacity: 0;
       animation: float-particle 6s ease-in-out infinite;
     }
-    .particle-warm {
-      fill: var(--warm);
-    }
+    .particle-warm { fill: var(--warm); }
 
-    /* ── Firefly dots ── */
-    .firefly {
-      fill: var(--warm); opacity: 0;
-      animation: firefly-glow 4s ease-in-out infinite;
+    /* ── Star scribbles ── */
+    .star-arm {
+      stroke: var(--lav); stroke-width: 1.5; stroke-linecap: round;
+      stroke-dasharray: 30; stroke-dashoffset: 30;
+      animation: draw 0.5s ease forwards;
     }
-
-    /* ── Scribble marks / doodles ── */
-    .doodle-mark {
-      fill: none; stroke: var(--lav); stroke-width: 0.8; stroke-linecap: round;
-      stroke-dasharray: 20; stroke-dashoffset: 20;
-      animation: draw 0.6s ease forwards;
-      opacity: 0.3;
-    }
-    .doodle-cross {
-      stroke: var(--sky); stroke-width: 0.7;
-      stroke-dasharray: 12; stroke-dashoffset: 12;
+    .star-sm {
+      stroke: var(--sky); stroke-width: 1; stroke-linecap: round;
+      stroke-dasharray: 15; stroke-dashoffset: 15;
       animation: draw 0.4s ease forwards;
-      opacity: 0.25;
     }
 
-    /* ── Ground scribble texture ── */
+    /* ── Twinkle dots ── */
+    .twinkle {
+      fill: var(--sky); opacity: 0;
+      animation: twinkle-anim 3s ease-in-out infinite;
+    }
+    .twinkle-warm { fill: var(--warm); animation: twinkle-anim 4s ease-in-out infinite; }
+
+    /* ── Ground ── */
     .ground-scribble {
       fill: none; stroke: var(--sage); stroke-width: 0.6; stroke-linecap: round;
       stroke-dasharray: 80; stroke-dashoffset: 80;
-      animation: draw 1.5s 1.5s ease forwards;
-      opacity: 0.2;
+      animation: draw 1.5s 1.5s ease forwards; opacity: 0.2;
     }
 
-    /* ── Title text ── */
+    /* ── Title ── */
     .title {
       font-family: 'Georgia', 'Times New Roman', serif;
       font-size: 42px; font-weight: 700; letter-spacing: 2px;
@@ -165,8 +174,6 @@
       fill: var(--sage); opacity: 0;
       animation: fade-up 1s 2.1s ease forwards;
     }
-
-    /* ── Underline scribble ── */
     .title-line {
       fill: none; stroke: var(--lav); stroke-width: 2;
       stroke-linecap: round; stroke-dasharray: 280; stroke-dashoffset: 280;
@@ -175,51 +182,7 @@
     .title-line2 {
       fill: none; stroke: var(--sage); stroke-width: 0.8;
       stroke-linecap: round; stroke-dasharray: 240; stroke-dashoffset: 240;
-      animation: draw 1.2s 2.5s ease forwards;
-      opacity: 0.4;
-    }
-
-    /* ── Star scribbles ── */
-    .star-arm {
-      stroke: var(--lav); stroke-width: 1.5; stroke-linecap: round;
-      stroke-dasharray: 30; stroke-dashoffset: 30;
-      animation: draw 0.5s ease forwards;
-    }
-    .star-arm-sm {
-      stroke: var(--sky); stroke-width: 1; stroke-linecap: round;
-      stroke-dasharray: 15; stroke-dashoffset: 15;
-      animation: draw 0.4s ease forwards;
-    }
-
-    /* ── Dot twinkle ── */
-    .twinkle {
-      fill: var(--sky); opacity: 0;
-      animation: twinkle-anim 3s ease-in-out infinite;
-    }
-    .twinkle-warm {
-      fill: var(--warm);
-      animation: twinkle-anim 4s ease-in-out infinite;
-    }
-
-    /* ── Shooting star ── */
-    .shooting-star {
-      fill: none; stroke: var(--cream); stroke-width: 1.2; stroke-linecap: round;
-      stroke-dasharray: 60; stroke-dashoffset: 60;
-      animation: shoot 1.5s 4s ease-out forwards;
-      opacity: 0;
-    }
-    .shooting-star2 {
-      fill: none; stroke: var(--lav); stroke-width: 0.8; stroke-linecap: round;
-      stroke-dasharray: 40; stroke-dashoffset: 40;
-      animation: shoot 1.2s 8s ease-out forwards;
-      opacity: 0;
-    }
-
-    /* ── Sky texture scribbles ── */
-    .sky-scratch {
-      fill: none; stroke-linecap: round;
-      stroke-dasharray: 30; stroke-dashoffset: 30;
-      animation: draw 0.8s ease forwards;
+      animation: draw 1.2s 2.5s ease forwards; opacity: 0.4;
     }
 
     /* ═══ KEYFRAMES ═══ */
@@ -231,18 +194,38 @@
       to   { opacity: 1; transform: translateY(0); }
     }
     @keyframes aurora-in {
-      0%   { opacity: 0; }
-      100% { opacity: 0.15; }
+      to { opacity: 0.15; }
     }
     @keyframes aurora-breathe {
       0%, 100% { opacity: 0.15; transform: translateY(0) scaleX(1); }
       50%      { opacity: 0.25; transform: translateY(-3px) scaleX(1.03); }
     }
-    @keyframes sway {
-      0%, 100% { transform: rotate(0deg); }
-      25%      { transform: rotate(2.5deg); }
-      75%      { transform: rotate(-2deg); }
+
+    /* Wind: scribble flows left→right continuously */
+    @keyframes wind-flow {
+      from { stroke-dashoffset: 900; }
+      to   { stroke-dashoffset: -1400; }
     }
+
+    /* Grass sway — continuous, driven by "wind" */
+    @keyframes sway {
+      0%   { transform: rotate(0deg) skewX(0deg); }
+      20%  { transform: rotate(4deg) skewX(2deg); }
+      40%  { transform: rotate(-1deg) skewX(-0.5deg); }
+      60%  { transform: rotate(3deg) skewX(1.5deg); }
+      80%  { transform: rotate(-2deg) skewX(-1deg); }
+      100% { transform: rotate(0deg) skewX(0deg); }
+    }
+
+    /* Meteor: appears, streaks, fades — loops */
+    @keyframes meteor-streak {
+      0%   { opacity: 0; transform: translate(0, 0); }
+      5%   { opacity: 0.9; }
+      25%  { opacity: 0.7; }
+      35%  { opacity: 0; transform: translate(90px, 30px); }
+      100% { opacity: 0; transform: translate(90px, 30px); }
+    }
+
     @keyframes drift1 {
       0%, 100% { transform: translateX(0); }
       50%      { transform: translateX(12px); }
@@ -254,14 +237,6 @@
     @keyframes drift3 {
       0%, 100% { transform: translateX(0) translateY(0); }
       50%      { transform: translateX(8px) translateY(-3px); }
-    }
-    @keyframes bird-fly {
-      0%, 100% { transform: translate(0, 0); }
-      50%      { transform: translate(40px, -6px); }
-    }
-    @keyframes bird-fly2 {
-      0%, 100% { transform: translate(0, 0); }
-      50%      { transform: translate(-30px, -4px); }
     }
     @keyframes moon-glow {
       0%, 100% { filter: drop-shadow(0 0 4px rgba(254,249,239,0.2)); }
@@ -286,22 +261,9 @@
       0%,100% { opacity: 0.15; r: 2; }
       50%      { opacity: 0.85; r: 3.5; }
     }
-    @keyframes shoot {
-      0%   { opacity: 0; stroke-dashoffset: 60; transform: translate(0,0); }
-      10%  { opacity: 0.8; }
-      60%  { opacity: 0.6; }
-      100% { opacity: 0; stroke-dashoffset: 0; transform: translate(80px, 25px); }
-    }
-    @keyframes shoot2 {
-      0%   { opacity: 0; stroke-dashoffset: 40; transform: translate(0,0); }
-      10%  { opacity: 0.6; }
-      60%  { opacity: 0.4; }
-      100% { opacity: 0; stroke-dashoffset: 0; transform: translate(60px, 18px); }
-    }
   </style>
 
   <defs>
-    <!-- Rich sky gradient: deep space → dusk → warm horizon -->
     <linearGradient id="nurtureBg" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%"   stop-color="#060e18" />
       <stop offset="20%"  stop-color="#0b1a2a" />
@@ -311,155 +273,117 @@
       <stop offset="92%"  stop-color="#2a4a30" />
       <stop offset="100%" stop-color="#1e3d30" />
     </linearGradient>
-    <!-- Warm horizon glow -->
     <radialGradient id="horizonGlow" cx="0.5" cy="1" r="0.6" fx="0.35" fy="0.95">
       <stop offset="0%"   stop-color="#e8a060" stop-opacity="0.12"/>
       <stop offset="50%"  stop-color="#c47040" stop-opacity="0.05"/>
       <stop offset="100%" stop-color="#000" stop-opacity="0"/>
     </radialGradient>
-    <!-- Ground gradient -->
     <linearGradient id="groundGrad" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%"   stop-color="#1a4035" stop-opacity="0.95"/>
       <stop offset="100%" stop-color="#0f2218" />
     </linearGradient>
-    <!-- Ground highlight -->
-    <linearGradient id="groundHighlight" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="groundHL" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%"   stop-color="#2a5a42" stop-opacity="0.3"/>
       <stop offset="100%" stop-color="#000" stop-opacity="0"/>
     </linearGradient>
   </defs>
 
-  <!-- ═══ BACKGROUND ═══ -->
+  <!-- BACKGROUND -->
   <rect width="900" height="220" class="bg" rx="12"/>
-
-  <!-- Horizon warm glow overlay -->
   <rect width="900" height="220" fill="url(#horizonGlow)" rx="12" opacity="0.8"/>
 
-  <!-- ═══ AURORA SCRIBBLES ═══ -->
-  <path class="aurora aurora1"
-    d="M0,55 C80,40 160,65 250,48 C340,32 420,58 520,42 C620,26 700,50 780,38 C830,32 870,45 900,40" />
-  <path class="aurora aurora2"
-    d="M0,65 C100,78 200,52 300,70 C400,88 480,55 580,68 C680,80 760,58 860,72 C890,76 900,70 900,70" />
-  <path class="aurora aurora3"
-    d="M50,80 C130,70 220,88 330,75 C440,62 520,82 620,70 C720,58 800,78 900,68" />
+  <!-- AURORA -->
+  <path class="aurora aurora1" d="M0,55 C80,40 160,65 250,48 C340,32 420,58 520,42 C620,26 700,50 780,38 C830,32 870,45 900,40"/>
+  <path class="aurora aurora2" d="M0,65 C100,78 200,52 300,70 C400,88 480,55 580,68 C680,80 760,58 860,72"/>
+  <path class="aurora aurora3" d="M50,80 C130,70 220,88 330,75 C440,62 520,82 620,70 C720,58 800,78 900,68"/>
 
-  <!-- ═══ MOON SCRIBBLE ═══ -->
+  <!-- MOON -->
+  <circle class="moon-fill" cx="760" cy="38" r="16"/>
+  <circle class="moon-scribble" cx="760" cy="38" r="16"/>
+  <circle class="moon-scribble" cx="760" cy="38" r="19" style="animation-delay:0.4s, 2.4s; opacity:0.3"/>
+  <path class="moon-scratch" d="M752,32 C754,35 756,33 758,36" style="animation-delay:1.6s"/>
+  <path class="moon-scratch" d="M764,40 C766,43 768,41 770,44" style="animation-delay:1.8s"/>
+  <path class="moon-scratch" d="M755,44 C757,46 758,45 760,47" style="animation-delay:2.0s"/>
+
+  <!-- ★ CONTINUOUS METEOR SHOWER ★ -->
+  <line class="meteor m1" x1="180" y1="10" x2="230" y2="28"/>
+  <line class="meteor m2" x1="420" y1="5"  x2="460" y2="20"/>
+  <line class="meteor m3" x1="650" y1="12" x2="700" y2="32"/>
+  <line class="meteor m4" x1="80"  y1="25" x2="120" y2="40"/>
+  <line class="meteor m5" x1="520" y1="8"  x2="560" y2="25"/>
+  <line class="meteor m6" x1="300" y1="18" x2="340" y2="35"/>
+  <line class="meteor m7" x1="750" y1="6"  x2="790" y2="22"/>
+
+  <!-- ★ WIND SCRIBBLES — continuous flowing curves ★ -->
+  <path class="wind wind1" d="M-50,45 C30,38 80,52 160,42 C240,32 300,50 380,40 C460,30 520,48 600,38 C680,28 740,46 820,36 C870,30 920,42 960,38"/>
+  <path class="wind wind2" d="M-80,65 C0,72 60,58 140,68 C220,78 280,60 360,70 C440,80 500,62 580,72 C660,82 720,64 800,74 C860,80 920,68 980,74"/>
+  <path class="wind wind3" d="M-30,30 C40,25 90,35 170,28 C250,21 310,34 390,26 C470,18 530,32 610,24 C690,16 750,30 830,22 C880,18 930,28 970,24"/>
+  <path class="wind wind4" d="M-60,85 C20,90 80,80 160,88 C240,96 300,82 380,90 C460,98 520,84 600,92 C680,100 740,86 820,94 C880,98 940,88 980,94"/>
+  <path class="wind wind5" d="M-40,55 C50,50 100,60 180,52 C260,44 320,58 400,50 C480,42 540,56 620,48 C700,40 760,54 840,46 C890,42 940,52 970,48"/>
+  <path class="wind wind6" d="M-70,100 C10,105 70,96 150,103 C230,110 290,98 370,106 C450,114 510,100 590,108 C670,116 730,102 810,110 C870,114 930,104 970,110"/>
+  <path class="wind wind7" d="M-20,75 C60,70 120,80 200,72 C280,64 340,78 420,70 C500,62 560,76 640,68 C720,60 780,74 860,66 C910,62 950,72 980,68"/>
+  <path class="wind wind8" d="M-90,115 C-10,120 60,112 140,118 C220,124 280,114 360,120 C440,126 500,116 580,122 C660,128 720,118 800,124 C860,128 920,120 980,126"/>
+
+  <!-- CLOUD SCRIBBLES -->
   <g>
-    <circle class="moon-fill" cx="760" cy="38" r="16"/>
-    <circle class="moon-scribble" cx="760" cy="38" r="16"/>
-    <circle class="moon-scribble" cx="760" cy="38" r="19" style="animation-delay:0.4s, 2.4s; opacity:0.3"/>
-    <!-- moon scratches -->
-    <path class="moon-scratch" d="M752,32 C754,35 756,33 758,36" style="animation-delay:1.6s"/>
-    <path class="moon-scratch" d="M764,40 C766,43 768,41 770,44" style="animation-delay:1.8s"/>
-    <path class="moon-scratch" d="M755,44 C757,46 758,45 760,47" style="animation-delay:2.0s"/>
-    <path class="moon-scratch" d="M768,33 C770,35 771,34 772,36" style="animation-delay:1.7s"/>
-  </g>
-
-  <!-- ═══ SHOOTING STARS ═══ -->
-  <line class="shooting-star" x1="200" y1="15" x2="240" y2="30"/>
-  <line class="shooting-star2" x1="550" y1="8" x2="580" y2="20"/>
-
-  <!-- ═══ SKY SCRATCHES / TEXTURE ═══ -->
-  <path class="sky-scratch" d="M120,25 C125,23 130,26 135,24" stroke="var(--sky)" stroke-width="0.4" style="animation-delay:0.5s" opacity="0.2"/>
-  <path class="sky-scratch" d="M380,15 C385,13 390,16 395,14" stroke="var(--lav)" stroke-width="0.3" style="animation-delay:0.8s" opacity="0.15"/>
-  <path class="sky-scratch" d="M620,50 C625,48 630,51 635,49" stroke="var(--sky)" stroke-width="0.4" style="animation-delay:1.0s" opacity="0.2"/>
-  <path class="sky-scratch" d="M480,70 C485,68 490,71 495,69" stroke="var(--lav)" stroke-width="0.3" style="animation-delay:0.7s" opacity="0.15"/>
-  <path class="sky-scratch" d="M830,75 C835,73 840,76 845,74" stroke="var(--sky)" stroke-width="0.4" style="animation-delay:0.9s" opacity="0.18"/>
-
-  <!-- ═══ CLOUD SCRIBBLES (with drift) ═══ -->
-  <!-- Cloud 1 - left -->
-  <g>
-    <path class="cloud-stroke cloud-drift1"
+    <path class="cloud-stroke cd1"
       d="M70,58 C78,46 95,40 112,45 C106,34 120,28 134,34 C148,26 165,31 168,44 C180,39 186,50 176,57 C185,60 182,70 170,68 C172,76 158,78 150,72 C142,80 128,78 124,70 C114,76 100,72 102,64 C90,68 82,62 70,58 Z"
       style="animation-delay:0.3s, 2.3s"/>
-    <path class="cloud-inner cloud-inner-d1"
+    <path class="cloud-inner cid1"
       d="M100,52 C108,44 120,42 130,48 C135,42 145,44 144,52"
       style="animation-delay:0.7s, 2.7s"/>
   </g>
-  <!-- Cloud 2 - center-right -->
   <g>
-    <path class="cloud-stroke cloud-drift2"
+    <path class="cloud-stroke cd2"
       d="M580,42 C590,32 608,26 624,32 C618,22 634,16 648,22 C662,14 680,20 682,32 C694,27 700,38 690,45 C700,48 696,58 684,56 C686,64 672,66 664,60 C656,68 640,66 638,58 C628,64 612,60 614,52 C602,56 594,50 580,42 Z"
       style="animation-delay:0.6s, 2.6s"/>
-    <path class="cloud-inner cloud-inner-d2"
+    <path class="cloud-inner cid2"
       d="M618,38 C626,30 640,28 650,34 C655,28 665,30 664,38"
       style="animation-delay:1.0s, 3.0s"/>
   </g>
-  <!-- Cloud 3 - small wispy right -->
-  <path class="cloud-stroke cloud-drift3"
+  <path class="cloud-stroke cd3"
     d="M820,65 C828,58 840,55 850,60 C855,54 864,56 862,63 C870,60 874,68 866,72 Z"
     style="animation-delay:0.9s, 2.9s"/>
-  <!-- Cloud 4 - small wispy center-left -->
-  <path class="cloud-stroke cloud-drift4"
-    d="M310,72 C318,65 330,62 340,67 C344,62 352,64 350,70 C356,68 358,74 352,77 Z"
-    style="animation-delay:1.1s, 3.1s"/>
 
-  <!-- ═══ SCRIBBLE BIRDS ═══ -->
-  <path class="bird" d="M410,30 C415,24 420,22 425,26 C430,22 435,24 440,30" style="animation-delay:0.5s, 1.5s"/>
-  <path class="bird bird2" d="M460,42 C464,37 468,35 472,39 C476,35 480,37 484,42" style="animation-delay:0.8s, 1.8s"/>
-  <path class="bird" d="M160,48 C164,43 168,41 172,45 C176,41 180,43 184,48" style="animation-delay:1.0s, 2.0s" opacity="0.3"/>
-
-  <!-- ═══ STAR SCRIBBLES ═══ -->
-  <!-- Large top-left star -->
+  <!-- STAR SCRIBBLES -->
   <line class="star-arm" x1="55" y1="18" x2="55" y2="40" style="animation-delay:0.5s"/>
   <line class="star-arm" x1="44" y1="29" x2="66" y2="29" style="animation-delay:0.6s"/>
   <line class="star-arm" x1="48" y1="22" x2="62" y2="36" style="animation-delay:0.7s"/>
   <line class="star-arm" x1="62" y1="22" x2="48" y2="36" style="animation-delay:0.8s"/>
-  <!-- Large top-right star -->
   <line class="star-arm" x1="844" y1="14" x2="844" y2="38" style="animation-delay:0.4s"/>
   <line class="star-arm" x1="832" y1="26" x2="856" y2="26" style="animation-delay:0.5s"/>
   <line class="star-arm" x1="836" y1="18" x2="852" y2="34" style="animation-delay:0.6s"/>
   <line class="star-arm" x1="852" y1="18" x2="836" y2="34" style="animation-delay:0.7s"/>
-  <!-- Small stars -->
-  <line class="star-arm-sm" x1="280" y1="12" x2="280" y2="24" style="animation-delay:0.9s"/>
-  <line class="star-arm-sm" x1="274" y1="18" x2="286" y2="18" style="animation-delay:1.0s"/>
-  <line class="star-arm-sm" x1="500" y1="18" x2="500" y2="28" style="animation-delay:1.1s"/>
-  <line class="star-arm-sm" x1="495" y1="23" x2="505" y2="23" style="animation-delay:1.2s"/>
-  <line class="star-arm-sm" x1="690" y1="10" x2="690" y2="20" style="animation-delay:0.8s"/>
-  <line class="star-arm-sm" x1="685" y1="15" x2="695" y2="15" style="animation-delay:0.9s"/>
+  <line class="star-sm" x1="280" y1="12" x2="280" y2="24" style="animation-delay:0.9s"/>
+  <line class="star-sm" x1="274" y1="18" x2="286" y2="18" style="animation-delay:1.0s"/>
+  <line class="star-sm" x1="500" y1="18" x2="500" y2="28" style="animation-delay:1.1s"/>
+  <line class="star-sm" x1="495" y1="23" x2="505" y2="23" style="animation-delay:1.2s"/>
+  <line class="star-sm" x1="690" y1="10" x2="690" y2="20" style="animation-delay:0.8s"/>
+  <line class="star-sm" x1="685" y1="15" x2="695" y2="15" style="animation-delay:0.9s"/>
 
-  <!-- ═══ TWINKLING DOTS ═══ -->
-  <circle class="twinkle" cx="140" cy="38"  r="2.5" style="animation-delay:0.0s"/>
-  <circle class="twinkle" cx="300" cy="18"  r="2"   style="animation-delay:0.7s"/>
-  <circle class="twinkle" cx="500" cy="28"  r="3"   style="animation-delay:1.3s"/>
-  <circle class="twinkle" cx="700" cy="16"  r="2"   style="animation-delay:0.4s"/>
-  <circle class="twinkle" cx="780" cy="55"  r="2.5" style="animation-delay:1.0s"/>
-  <circle class="twinkle" cx="220" cy="85"  r="1.8" style="animation-delay:0.6s"/>
-  <circle class="twinkle" cx="660" cy="70"  r="2"   style="animation-delay:1.5s"/>
+  <!-- TWINKLE DOTS -->
+  <circle class="twinkle" cx="140" cy="38" r="2.5" style="animation-delay:0.0s"/>
+  <circle class="twinkle" cx="300" cy="18" r="2"   style="animation-delay:0.7s"/>
+  <circle class="twinkle" cx="500" cy="28" r="3"   style="animation-delay:1.3s"/>
+  <circle class="twinkle" cx="700" cy="16" r="2"   style="animation-delay:0.4s"/>
+  <circle class="twinkle" cx="220" cy="85" r="1.8" style="animation-delay:0.6s"/>
+  <circle class="twinkle" cx="660" cy="70" r="2"   style="animation-delay:1.5s"/>
   <circle class="twinkle-warm" cx="400" cy="48" r="1.5" style="animation-delay:0.3s"/>
   <circle class="twinkle-warm" cx="560" cy="60" r="1.8" style="animation-delay:1.1s"/>
-  <circle class="twinkle" cx="50"  cy="70"  r="1.5" style="animation-delay:1.8s"/>
+  <circle class="twinkle" cx="50" cy="70" r="1.5" style="animation-delay:1.8s"/>
   <circle class="twinkle" cx="850" cy="48" r="1.5" style="animation-delay:0.9s"/>
-  <circle class="twinkle" cx="180" cy="15" r="1.2" style="animation-delay:2.0s"/>
 
-  <!-- ═══ DOODLE MARKS (scattered scribbles) ═══ -->
-  <path class="doodle-mark" d="M30,95 C33,90 36,93 38,88" style="animation-delay:1.2s"/>
-  <path class="doodle-mark" d="M870,90 C873,85 876,88 878,83" style="animation-delay:1.4s"/>
-  <path class="doodle-mark" d="M150,105 C153,100 156,103 158,98" style="animation-delay:1.6s"/>
-  <path class="doodle-mark" d="M750,100 C753,95 756,98 758,93" style="animation-delay:1.3s"/>
-  <path class="doodle-cross" d="M420,85 L424,89 M424,85 L420,89" style="animation-delay:1.5s"/>
-  <path class="doodle-cross" d="M520,78 L524,82 M524,78 L520,82" style="animation-delay:1.7s"/>
-  <path class="doodle-cross" d="M250,75 L253,78 M253,75 L250,78" style="animation-delay:1.1s"/>
-  <path class="doodle-cross" d="M680,82 L683,85 M683,82 L680,85" style="animation-delay:1.9s"/>
-  <!-- tiny circles -->
-  <circle class="doodle-mark" cx="100" cy="110" r="3" style="animation-delay:1.4s"/>
-  <circle class="doodle-mark" cx="800" cy="108" r="2.5" style="animation-delay:1.6s"/>
-  <circle class="doodle-mark" cx="350" cy="95" r="2" style="animation-delay:1.8s"/>
+  <!-- GROUND -->
+  <ellipse cx="450" cy="245" rx="550" ry="90" fill="url(#groundGrad)"/>
+  <ellipse cx="450" cy="228" rx="490" ry="42" fill="url(#groundHL)"/>
+  <path class="ground-scribble" d="M50,182 C100,179 150,184 200,180 C250,177 300,183 350,179" style="animation-delay:1.5s"/>
+  <path class="ground-scribble" d="M400,185 C450,181 500,187 550,182 C600,178 650,185 700,181" style="animation-delay:1.7s"/>
+  <path class="ground-scribble" d="M550,190 C600,187 650,192 700,188 C750,185 800,191 850,187" style="animation-delay:2.0s"/>
 
-  <!-- ═══ GROUND ═══ -->
-  <ellipse cx="450" cy="242" rx="540" ry="85" fill="url(#groundGrad)" />
-  <ellipse cx="450" cy="225" rx="480" ry="40" fill="url(#groundHighlight)" />
-
-  <!-- Ground scribble texture -->
-  <path class="ground-scribble" d="M50,180 C100,178 150,182 200,179 C250,176 300,181 350,178" style="animation-delay:1.5s"/>
-  <path class="ground-scribble" d="M400,183 C450,180 500,185 550,181 C600,177 650,183 700,180" style="animation-delay:1.7s"/>
-  <path class="ground-scribble" d="M150,190 C200,188 250,192 300,189" style="animation-delay:1.9s"/>
-  <path class="ground-scribble" d="M550,188 C600,186 650,190 700,187 C750,184 800,189 850,186" style="animation-delay:2.0s"/>
-
-  <!-- ═══ HORIZON LINES ═══ -->
+  <!-- HORIZON LINES -->
   <path class="horizon"
     d="M0,155 C50,138 120,166 200,147 C280,130 350,163 430,144
-       C510,126 580,160 660,141 C730,125 800,154 900,139" />
+       C510,126 580,160 660,141 C730,125 800,154 900,139"/>
   <path class="horizon2"
     d="M0,165 C60,176 140,157 220,169 C300,180 370,154 450,167
        C530,179 600,156 680,168 C760,179 840,159 900,170"
@@ -468,75 +392,107 @@
     d="M0,150 C70,142 150,158 230,144 C310,130 390,155 470,140
        C550,126 630,152 710,138 C790,124 850,148 900,136"
     style="animation-delay:1.2s"/>
-  <path class="horizon4"
-    d="M0,172 C80,178 160,168 240,175 C320,182 400,166 480,174
-       C560,182 640,169 720,176 C800,183 860,170 900,177"
-    style="animation-delay:1.5s"/>
 
-  <!-- ═══ GRASS BLADES (curved, many clusters) ═══ -->
-  <!-- Far left cluster -->
-  <path class="blade" d="M15,175 Q12,158 18,142" style="animation-delay:0.9s; animation-duration:0.7s, 3.5s"/>
-  <path class="blade blade-dark" d="M22,175 Q20,155 25,140" style="animation-delay:1.0s; animation-duration:0.6s, 3.2s"/>
-  <path class="blade blade-light" d="M29,175 Q32,160 28,145" style="animation-delay:1.1s; animation-duration:0.7s, 3.8s"/>
-  <path class="blade" d="M36,175 Q34,156 38,143" style="animation-delay:1.2s; animation-duration:0.6s, 3.0s"/>
-  <path class="blade blade-teal" d="M43,175 Q46,162 41,148" style="animation-delay:1.3s; animation-duration:0.7s, 3.6s"/>
-  <path class="blade blade-dark" d="M50,175 Q48,158 52,144" style="animation-delay:1.0s; animation-duration:0.5s, 2.8s"/>
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- ★ GRASS BLADES — prominent, swaying ★ -->
+  <!-- ═══════════════════════════════════════════ -->
 
-  <!-- Left-mid cluster -->
-  <path class="blade blade-light" d="M110,175 Q107,155 113,138" style="animation-delay:1.1s; animation-duration:0.7s, 3.4s"/>
-  <path class="blade" d="M117,175 Q120,158 115,142" style="animation-delay:1.2s; animation-duration:0.6s, 3.1s"/>
-  <path class="blade blade-teal" d="M124,175 Q122,156 126,140" style="animation-delay:1.3s; animation-duration:0.7s, 3.7s"/>
-  <path class="blade blade-dark" d="M131,175 Q134,162 129,148" style="animation-delay:1.0s; animation-duration:0.5s, 2.9s"/>
+  <!-- Cluster 1 — far left -->
+  <path class="blade blade-sage"  d="M8,178 Q4,155 10,130"  style="animation-delay:0.9s; animation-duration:0.7s, 2.8s"/>
+  <path class="blade blade-dark"  d="M16,178 Q13,150 19,125"  style="animation-delay:1.0s; animation-duration:0.6s, 3.2s"/>
+  <path class="blade blade-light" d="M24,178 Q27,152 22,128"  style="animation-delay:1.1s; animation-duration:0.7s, 2.6s"/>
+  <path class="blade blade-teal"  d="M32,178 Q29,148 35,122"  style="animation-delay:1.2s; animation-duration:0.6s, 3.0s"/>
+  <path class="blade blade-warm"  d="M40,178 Q43,154 38,130"  style="animation-delay:1.3s; animation-duration:0.7s, 2.9s"/>
+  <path class="blade blade-sage"  d="M48,178 Q45,150 51,126"  style="animation-delay:1.4s; animation-duration:0.6s, 3.4s"/>
+  <path class="blade blade-dark"  d="M56,178 Q59,155 54,132"  style="animation-delay:1.0s; animation-duration:0.7s, 2.7s"/>
 
-  <!-- Mid-left cluster -->
-  <path class="blade" d="M195,175 Q192,154 198,136" style="animation-delay:1.0s; animation-duration:0.7s, 3.3s"/>
-  <path class="blade blade-light" d="M202,175 Q205,158 200,140" style="animation-delay:1.1s; animation-duration:0.6s, 3.6s"/>
-  <path class="blade blade-dark" d="M209,175 Q207,155 212,138" style="animation-delay:1.2s; animation-duration:0.7s, 3.0s"/>
-  <path class="blade" d="M216,175 Q219,160 214,144" style="animation-delay:1.3s; animation-duration:0.5s, 3.4s"/>
-  <path class="blade blade-teal" d="M223,175 Q221,156 225,142" style="animation-delay:1.4s; animation-duration:0.6s, 3.8s"/>
+  <!-- Cluster 2 -->
+  <path class="blade blade-light" d="M88,178 Q84,148 90,120"  style="animation-delay:1.1s; animation-duration:0.7s, 3.1s"/>
+  <path class="blade blade-sage"  d="M96,178 Q99,152 94,126"  style="animation-delay:1.2s; animation-duration:0.6s, 2.8s"/>
+  <path class="blade blade-teal"  d="M104,178 Q101,146 107,118" style="animation-delay:1.3s; animation-duration:0.7s, 3.3s"/>
+  <path class="blade blade-warm"  d="M112,178 Q115,154 110,128" style="animation-delay:1.0s; animation-duration:0.6s, 2.5s"/>
+  <path class="blade blade-dark"  d="M120,178 Q117,150 123,124" style="animation-delay:1.4s; animation-duration:0.7s, 3.0s"/>
 
-  <!-- Center-left cluster -->
-  <path class="blade blade-teal" d="M330,175 Q327,152 333,134" style="animation-delay:1.1s; animation-duration:0.7s, 3.5s"/>
-  <path class="blade" d="M337,175 Q340,158 335,140" style="animation-delay:1.2s; animation-duration:0.6s, 3.2s"/>
-  <path class="blade blade-light" d="M344,175 Q342,154 346,138" style="animation-delay:1.3s; animation-duration:0.7s, 3.7s"/>
-  <path class="blade blade-dark" d="M351,175 Q354,162 349,146" style="animation-delay:1.0s; animation-duration:0.5s, 3.1s"/>
+  <!-- Cluster 3 -->
+  <path class="blade blade-teal"  d="M155,178 Q151,145 158,115" style="animation-delay:1.0s; animation-duration:0.7s, 2.9s"/>
+  <path class="blade blade-sage"  d="M163,178 Q166,148 161,120" style="animation-delay:1.1s; animation-duration:0.6s, 3.2s"/>
+  <path class="blade blade-light" d="M171,178 Q168,144 174,114" style="animation-delay:1.2s; animation-duration:0.7s, 2.6s"/>
+  <path class="blade blade-dark"  d="M179,178 Q182,152 177,126" style="animation-delay:1.3s; animation-duration:0.6s, 3.4s"/>
+  <path class="blade blade-warm"  d="M187,178 Q184,146 190,118" style="animation-delay:1.4s; animation-duration:0.7s, 3.1s"/>
 
-  <!-- Center cluster (taller) -->
-  <path class="blade" d="M420,175 Q416,150 423,130" style="animation-delay:0.9s; animation-duration:0.8s, 3.4s"/>
-  <path class="blade blade-dark" d="M428,175 Q432,152 426,132" style="animation-delay:1.0s; animation-duration:0.7s, 3.0s"/>
-  <path class="blade blade-light" d="M436,175 Q434,154 438,136" style="animation-delay:1.1s; animation-duration:0.7s, 3.6s"/>
-  <path class="blade blade-teal" d="M444,175 Q448,156 442,138" style="animation-delay:1.2s; animation-duration:0.6s, 3.3s"/>
-  <path class="blade" d="M452,175 Q450,152 454,134" style="animation-delay:1.3s; animation-duration:0.7s, 3.8s"/>
-  <path class="blade blade-dark" d="M460,175 Q464,158 458,140" style="animation-delay:1.4s; animation-duration:0.5s, 3.1s"/>
+  <!-- Cluster 4 -->
+  <path class="blade blade-dark"  d="M220,178 Q216,142 223,110" style="animation-delay:0.9s; animation-duration:0.7s, 2.7s"/>
+  <path class="blade blade-sage"  d="M228,178 Q231,148 226,118" style="animation-delay:1.0s; animation-duration:0.6s, 3.0s"/>
+  <path class="blade blade-teal"  d="M236,178 Q233,140 239,108" style="animation-delay:1.1s; animation-duration:0.7s, 3.3s"/>
+  <path class="blade blade-light" d="M244,178 Q247,150 242,122" style="animation-delay:1.2s; animation-duration:0.6s, 2.8s"/>
+  <path class="blade blade-warm"  d="M252,178 Q249,144 255,114" style="animation-delay:1.3s; animation-duration:0.7s, 3.5s"/>
+  <path class="blade blade-sage"  d="M260,178 Q263,150 258,124" style="animation-delay:1.4s; animation-duration:0.6s, 2.6s"/>
 
-  <!-- Center-right cluster -->
-  <path class="blade blade-light" d="M540,175 Q537,154 543,136" style="animation-delay:1.0s; animation-duration:0.7s, 3.5s"/>
-  <path class="blade" d="M547,175 Q550,158 545,140" style="animation-delay:1.1s; animation-duration:0.6s, 3.2s"/>
-  <path class="blade blade-teal" d="M554,175 Q552,155 556,138" style="animation-delay:1.2s; animation-duration:0.7s, 3.7s"/>
-  <path class="blade blade-dark" d="M561,175 Q564,162 559,146" style="animation-delay:1.3s; animation-duration:0.5s, 3.0s"/>
+  <!-- Cluster 5 — center-left -->
+  <path class="blade blade-light" d="M300,178 Q296,140 303,106" style="animation-delay:1.0s; animation-duration:0.7s, 3.1s"/>
+  <path class="blade blade-dark"  d="M308,178 Q311,146 306,114" style="animation-delay:1.1s; animation-duration:0.6s, 2.8s"/>
+  <path class="blade blade-sage"  d="M316,178 Q313,138 319,104" style="animation-delay:1.2s; animation-duration:0.7s, 3.4s"/>
+  <path class="blade blade-teal"  d="M324,178 Q327,148 322,118" style="animation-delay:1.3s; animation-duration:0.6s, 2.5s"/>
+  <path class="blade blade-warm"  d="M332,178 Q329,142 335,110" style="animation-delay:1.4s; animation-duration:0.7s, 3.2s"/>
 
-  <!-- Right-mid cluster -->
-  <path class="blade" d="M640,175 Q637,152 643,134" style="animation-delay:1.1s; animation-duration:0.7s, 3.4s"/>
-  <path class="blade blade-dark" d="M647,175 Q650,158 645,140" style="animation-delay:1.2s; animation-duration:0.6s, 3.1s"/>
-  <path class="blade blade-light" d="M654,175 Q652,154 656,138" style="animation-delay:1.3s; animation-duration:0.7s, 3.6s"/>
-  <path class="blade blade-teal" d="M661,175 Q664,162 659,146" style="animation-delay:1.0s; animation-duration:0.5s, 3.8s"/>
-  <path class="blade" d="M668,175 Q666,156 670,142" style="animation-delay:1.4s; animation-duration:0.6s, 3.3s"/>
+  <!-- Cluster 6 — CENTER (tallest) -->
+  <path class="blade blade-sage"  d="M378,178 Q373,132 381,95"  style="animation-delay:0.9s; animation-duration:0.8s, 2.9s"/>
+  <path class="blade blade-dark"  d="M387,178 Q391,136 384,98"  style="animation-delay:1.0s; animation-duration:0.7s, 3.3s"/>
+  <path class="blade blade-teal"  d="M396,178 Q392,128 399,90"  style="animation-delay:1.1s; animation-duration:0.7s, 2.6s"/>
+  <path class="blade blade-light" d="M405,178 Q409,134 402,94"  style="animation-delay:1.2s; animation-duration:0.6s, 3.0s"/>
+  <path class="blade blade-warm"  d="M414,178 Q410,130 417,92"  style="animation-delay:1.3s; animation-duration:0.7s, 3.5s"/>
+  <path class="blade blade-sage"  d="M423,178 Q427,138 420,100" style="animation-delay:1.4s; animation-duration:0.6s, 2.7s"/>
+  <path class="blade blade-dark"  d="M432,178 Q428,126 435,88"  style="animation-delay:0.9s; animation-duration:0.7s, 3.2s"/>
+  <path class="blade blade-teal"  d="M441,178 Q445,136 438,96"  style="animation-delay:1.0s; animation-duration:0.6s, 2.8s"/>
+  <path class="blade blade-light" d="M450,178 Q446,130 453,90"  style="animation-delay:1.1s; animation-duration:0.7s, 3.4s"/>
+  <path class="blade blade-warm"  d="M459,178 Q463,138 456,98"  style="animation-delay:1.2s; animation-duration:0.6s, 2.5s"/>
+  <path class="blade blade-sage"  d="M468,178 Q464,128 471,88"  style="animation-delay:1.3s; animation-duration:0.7s, 3.1s"/>
+  <path class="blade blade-dark"  d="M477,178 Q481,136 474,96"  style="animation-delay:1.4s; animation-duration:0.6s, 3.3s"/>
+  <path class="blade blade-teal"  d="M486,178 Q482,132 489,94"  style="animation-delay:0.9s; animation-duration:0.7s, 2.6s"/>
+  <path class="blade blade-light" d="M495,178 Q499,140 492,100" style="animation-delay:1.0s; animation-duration:0.6s, 3.0s"/>
+  <path class="blade blade-warm"  d="M504,178 Q500,134 507,96"  style="animation-delay:1.1s; animation-duration:0.7s, 3.5s"/>
+  <path class="blade blade-sage"  d="M513,178 Q517,142 510,104" style="animation-delay:1.2s; animation-duration:0.6s, 2.7s"/>
 
-  <!-- Right cluster -->
-  <path class="blade blade-teal" d="M740,175 Q737,154 743,136" style="animation-delay:1.0s; animation-duration:0.7s, 3.5s"/>
-  <path class="blade" d="M747,175 Q750,158 745,140" style="animation-delay:1.1s; animation-duration:0.6s, 3.2s"/>
-  <path class="blade blade-light" d="M754,175 Q752,155 756,138" style="animation-delay:1.2s; animation-duration:0.7s, 3.7s"/>
-  <path class="blade blade-dark" d="M761,175 Q764,162 759,146" style="animation-delay:1.3s; animation-duration:0.5s, 3.0s"/>
+  <!-- Cluster 7 — center-right -->
+  <path class="blade blade-dark"  d="M555,178 Q551,140 558,106" style="animation-delay:1.0s; animation-duration:0.7s, 3.0s"/>
+  <path class="blade blade-sage"  d="M563,178 Q566,148 561,118" style="animation-delay:1.1s; animation-duration:0.6s, 2.8s"/>
+  <path class="blade blade-light" d="M571,178 Q568,138 574,104" style="animation-delay:1.2s; animation-duration:0.7s, 3.4s"/>
+  <path class="blade blade-teal"  d="M579,178 Q582,150 577,120" style="animation-delay:1.3s; animation-duration:0.6s, 2.5s"/>
+  <path class="blade blade-warm"  d="M587,178 Q584,144 590,112" style="animation-delay:1.4s; animation-duration:0.7s, 3.2s"/>
 
-  <!-- Far right cluster -->
-  <path class="blade" d="M845,175 Q842,154 848,136" style="animation-delay:0.9s; animation-duration:0.7s, 3.4s"/>
-  <path class="blade blade-dark" d="M852,175 Q855,158 850,140" style="animation-delay:1.0s; animation-duration:0.6s, 3.1s"/>
-  <path class="blade blade-light" d="M859,175 Q857,155 861,138" style="animation-delay:1.1s; animation-duration:0.7s, 3.6s"/>
-  <path class="blade blade-teal" d="M866,175 Q869,162 864,146" style="animation-delay:1.2s; animation-duration:0.5s, 3.8s"/>
-  <path class="blade" d="M873,175 Q871,156 875,142" style="animation-delay:1.3s; animation-duration:0.6s, 3.3s"/>
-  <path class="blade blade-dark" d="M880,175 Q883,158 878,144" style="animation-delay:1.4s; animation-duration:0.7s, 3.0s"/>
+  <!-- Cluster 8 -->
+  <path class="blade blade-teal"  d="M625,178 Q621,146 628,114" style="animation-delay:0.9s; animation-duration:0.7s, 3.1s"/>
+  <path class="blade blade-sage"  d="M633,178 Q636,152 631,122" style="animation-delay:1.0s; animation-duration:0.6s, 2.6s"/>
+  <path class="blade blade-dark"  d="M641,178 Q638,140 644,108" style="animation-delay:1.1s; animation-duration:0.7s, 3.3s"/>
+  <path class="blade blade-light" d="M649,178 Q652,150 647,120" style="animation-delay:1.2s; animation-duration:0.6s, 2.8s"/>
+  <path class="blade blade-warm"  d="M657,178 Q654,144 660,114" style="animation-delay:1.3s; animation-duration:0.7s, 3.5s"/>
+  <path class="blade blade-sage"  d="M665,178 Q668,152 663,124" style="animation-delay:1.4s; animation-duration:0.6s, 2.7s"/>
 
-  <!-- ═══ FIREFLIES ═══ -->
+  <!-- Cluster 9 -->
+  <path class="blade blade-light" d="M700,178 Q696,148 703,118" style="animation-delay:1.0s; animation-duration:0.7s, 3.0s"/>
+  <path class="blade blade-teal"  d="M708,178 Q711,154 706,126" style="animation-delay:1.1s; animation-duration:0.6s, 3.2s"/>
+  <path class="blade blade-dark"  d="M716,178 Q713,144 719,112" style="animation-delay:1.2s; animation-duration:0.7s, 2.6s"/>
+  <path class="blade blade-sage"  d="M724,178 Q727,152 722,124" style="animation-delay:1.3s; animation-duration:0.6s, 3.4s"/>
+  <path class="blade blade-warm"  d="M732,178 Q729,146 735,116" style="animation-delay:1.4s; animation-duration:0.7s, 2.8s"/>
+
+  <!-- Cluster 10 -->
+  <path class="blade blade-sage"  d="M765,178 Q761,146 768,114" style="animation-delay:0.9s; animation-duration:0.7s, 3.1s"/>
+  <path class="blade blade-dark"  d="M773,178 Q776,150 771,120" style="animation-delay:1.0s; animation-duration:0.6s, 2.5s"/>
+  <path class="blade blade-teal"  d="M781,178 Q778,142 784,108" style="animation-delay:1.1s; animation-duration:0.7s, 3.3s"/>
+  <path class="blade blade-light" d="M789,178 Q792,152 787,122" style="animation-delay:1.2s; animation-duration:0.6s, 2.7s"/>
+  <path class="blade blade-warm"  d="M797,178 Q794,148 800,116" style="animation-delay:1.3s; animation-duration:0.7s, 3.5s"/>
+
+  <!-- Cluster 11 — far right -->
+  <path class="blade blade-dark"  d="M830,178 Q826,144 833,110" style="animation-delay:1.0s; animation-duration:0.7s, 2.8s"/>
+  <path class="blade blade-sage"  d="M838,178 Q841,150 836,118" style="animation-delay:1.1s; animation-duration:0.6s, 3.2s"/>
+  <path class="blade blade-light" d="M846,178 Q843,140 849,106" style="animation-delay:1.2s; animation-duration:0.7s, 2.6s"/>
+  <path class="blade blade-teal"  d="M854,178 Q857,152 852,122" style="animation-delay:1.3s; animation-duration:0.6s, 3.4s"/>
+  <path class="blade blade-warm"  d="M862,178 Q859,146 865,114" style="animation-delay:1.4s; animation-duration:0.7s, 3.0s"/>
+  <path class="blade blade-sage"  d="M870,178 Q873,150 868,120" style="animation-delay:0.9s; animation-duration:0.6s, 2.7s"/>
+  <path class="blade blade-dark"  d="M878,178 Q875,142 881,108" style="animation-delay:1.0s; animation-duration:0.7s, 3.3s"/>
+  <path class="blade blade-light" d="M886,178 Q889,148 884,116" style="animation-delay:1.1s; animation-duration:0.6s, 2.5s"/>
+
+  <!-- FIREFLIES -->
   <circle class="firefly" cx="90"  cy="155" r="1.5" style="animation-delay:0.0s"/>
   <circle class="firefly" cx="250" cy="148" r="2"   style="animation-delay:1.5s"/>
   <circle class="firefly" cx="380" cy="160" r="1.5" style="animation-delay:0.8s"/>
@@ -548,7 +504,7 @@
   <circle class="firefly" cx="460" cy="168" r="1.5" style="animation-delay:3.0s"/>
   <circle class="firefly" cx="700" cy="165" r="1.8" style="animation-delay:0.3s"/>
 
-  <!-- ═══ FLOATING PARTICLES ═══ -->
+  <!-- FLOATING PARTICLES -->
   <circle class="particle" cx="320" cy="140" r="2.5"
     style="--dx:15px; --dy:-55px; animation-delay:0.5s; animation-duration:7s"/>
   <circle class="particle" cx="580" cy="135" r="2"
@@ -564,18 +520,14 @@
   <circle class="particle particle-warm" cx="820" cy="150" r="2"
     style="--dx:10px; --dy:-52px; animation-delay:0.3s; animation-duration:6.5s"/>
 
-  <!-- ═══ TITLE TEXT ═══ -->
+  <!-- TITLE -->
   <text class="title" x="450" y="100" text-anchor="middle">Brent001</text>
-
-  <!-- Double scribble underline -->
   <path class="title-line"
     d="M294,112 C330,120 380,106 420,114 C460,122 500,105 540,113 C565,118 590,108 608,114"
     style="animation-delay:2.3s"/>
   <path class="title-line2"
     d="M302,117 C335,123 385,110 425,117 C465,124 505,109 545,116 C568,120 592,112 602,117"
     style="animation-delay:2.5s"/>
-
   <text class="subtitle" x="450" y="130" text-anchor="middle">CS STUDENT · WEB DEV · OPEN SOURCE</text>
-
   <text class="jp-text" x="450" y="148" text-anchor="middle">コードを書く · 音楽を聴く · 空を見る</text>
 </svg>
