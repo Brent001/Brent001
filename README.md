@@ -1,149 +1,134 @@
-<div align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=7B2FBE&height=300&section=header&text=Brent%20Abrazaldo&fontSize=65&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full-Stack%20Dev%20%7C%20Anime%20Enjoyer%20%7C%20CS%20Student&descAlignY=58&descSize=20" />
-</div>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200" width="900" height="200">
+  <defs>
+    <filter id="r" x="-3%" y="-3%" width="106%" height="106%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.028" numOctaves="4" seed="12" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <style>
+      .ln { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .w1 { stroke: #D8D2C8; }
+      .w2 { stroke: #B0AAA0; }
+      .w3 { stroke: #E8E4DC; }
 
-<div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=2500&pause=800&color=C084FC&center=true&vCenter=true&width=700&lines=%22Ore+wa+geijutsu+no+bakuhatsu+da%21%22+%F0%9F%92%A5;Shipping+anime+apps+at+3am...+%F0%9F%8C%99;TypeScript+%E2%80%A2+React+%E2%80%A2+Node.js+%E2%80%A2+Svelte;CS+Student+%40+MDC+%7C+Anime+Enjoyer+%F0%9F%8C%B8;Building%3A+e-KALIBRO+%26+Miruro+%F0%9F%94%A5;Just+editing+opensource+repos...+%E2%9C%A8" alt="Typing SVG" />
-</div>
+      .bo { stroke-dasharray: 2220; stroke-dashoffset: 2220; animation: d 2s cubic-bezier(.5,0,.5,1) 0s forwards; }
+      .bi { stroke-dasharray: 2100; stroke-dashoffset: 2100; animation: d 2s cubic-bezier(.5,0,.5,1) 0.18s forwards; }
 
-<br/>
+      .bm { stroke-dasharray: 310; stroke-dashoffset: 310; animation: d 1.2s ease 0.2s forwards; }
+      .bc { stroke-dasharray: 140; stroke-dashoffset: 140; animation: d 0.7s ease 0.85s forwards; }
+      .bt { stroke-dasharray: 290; stroke-dashoffset: 290; animation: d 1.1s ease 0.3s forwards; }
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Brent001&style=for-the-badge&color=7B2FBE&label=PROFILE+VIEWS" alt="Profile Views" />
-  &nbsp;
-  <a href="https://github.com/Brent001?tab=followers">
-    <img src="https://img.shields.io/github/followers/Brent001?style=for-the-badge&color=A855F7&labelColor=1a0533&label=FOLLOWERS" alt="Followers" />
-  </a>
-  &nbsp;
-  <a href="https://github.com/Brent001?tab=repositories">
-    <img src="https://img.shields.io/badge/REPOS-61-C084FC?style=for-the-badge&labelColor=1a0533" alt="Repos" />
-  </a>
-</p>
+      .lv { stroke-dasharray: 110; stroke-dashoffset: 110; }
+      .la { animation: d .44s ease 0.75s forwards; }
+      .lb { animation: d .44s ease 0.90s forwards; }
+      .lc { animation: d .44s ease 1.05s forwards; }
+      .ld { animation: d .44s ease 1.18s forwards; }
+      .le { animation: d .44s ease 1.30s forwards; }
+      .lf { animation: d .44s ease 1.42s forwards; }
+      .lg { animation: d .44s ease 1.55s forwards; }
+      .lh { animation: d .44s ease 0.80s forwards; }
+      .li { animation: d .44s ease 0.95s forwards; }
 
----
+      .bd { stroke-dasharray: 65; stroke-dashoffset: 65; }
+      .b1 { animation: d .55s ease 1.35s forwards; }
+      .b2 { animation: d .55s ease 1.55s forwards; }
+      .b3 { animation: d .55s ease 1.75s forwards; }
+      .b4 { animation: d .55s ease 1.95s forwards; }
+      .b5 { animation: d .55s ease 2.05s forwards; }
+      .b6 { animation: d .55s ease 2.18s forwards; }
+      .b7 { animation: d .55s ease 2.30s forwards; }
+      .b8 { animation: d .55s ease 1.45s forwards; }
 
-## ⛩️ `> whoami`
+      .sp { stroke-dasharray: 330; stroke-dashoffset: 330; animation: d .7s ease 2.4s forwards; }
 
-```diff
-+ Role      : CS Student @ Metro Dagupan Colleges, Inc. (MDC)
-+ Thesis    : e-KALIBRO — Smart Library Management System 📚
-+ Side Quest: Miruro — Personal Anime Streaming App 🎌
-+ Status    : Currently watching too many anime simultaneously
-+ Timezone  : Asia/Manila — debugging at 3am is perfectly normal
-```
+      .t1 { opacity: 0; animation: fi .9s ease 2.5s forwards; }
+      .t2 { opacity: 0; animation: fi .8s ease 3.0s forwards; }
+      .t3 { opacity: 0; animation: fi .7s ease 3.4s forwards; }
 
-**🎯 Currently building:**
-- **[e-KALIBRO](https://github.com/Brent001/I-Kalibro-Admin-Dashboard)** — Smart Library System (Agile/SCRUM capstone thesis)
-- **Miruro** — React-based anime streaming platform with custom UI
-- **Consumet-style API** — TypeScript scraper for anime video sources
+      @keyframes d { to { stroke-dashoffset: 0; } }
+      @keyframes fi { to { opacity: 1; } }
+    </style>
+  </defs>
 
----
+  <rect width="900" height="200" fill="#0D1117"/>
 
-## ⚡ Tech Stack
+  <!-- Outer frame -->
+  <rect x="11" y="11" width="878" height="178" rx="3"
+        class="ln w2 bo" stroke-width="1.4" filter="url(#r)"/>
+  <!-- Inner frame -->
+  <rect x="19" y="19" width="862" height="162" rx="2"
+        class="ln w2 bi" stroke-width="0.75" opacity="0.45" filter="url(#r)"/>
 
-<div align="center">
+  <!-- Main branch: bottom-left rising upward -->
+  <path d="M 35 194 C 40 178 46 161 53 145 C 59 129 66 113 73 97
+           C 80 81 86 65 92 49 C 96 37 97 27 97 24"
+        class="ln w1 bm" stroke-width="1.3" filter="url(#r)"/>
 
-**Languages**
+  <!-- Secondary twig off main branch -->
+  <path d="M 58 140 C 54 127 52 113 56 100"
+        class="ln w2 bc" stroke-width="0.95" filter="url(#r)"/>
 
-![TypeScript](https://img.shields.io/badge/TypeScript-7B2FBE?style=for-the-badge&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-A855F7?style=for-the-badge&logo=javascript&logoColor=white)
-![Python](https://img.shields.io/badge/Python-C084FC?style=for-the-badge&logo=python&logoColor=white)
+  <!-- Leaves off main branch -->
+  <path d="M 55 142 C 46 135 38 130 32 125" class="ln w1 lv la" stroke-width="1"   filter="url(#r)"/>
+  <path d="M 55 138 C 63 132 71 129 78 125" class="ln w1 lv la" stroke-width="1"   filter="url(#r)"/>
+  <path d="M 64 117 C 55 111 47 107 41 102" class="ln w1 lv lb" stroke-width="1"   filter="url(#r)"/>
+  <path d="M 68 106 C 77 100 85 97 92 93"   class="ln w1 lv lc" stroke-width="1"   filter="url(#r)"/>
+  <path d="M 77 82  C 67 76 60 72 55 68"    class="ln w1 lv ld" stroke-width="0.95" filter="url(#r)"/>
+  <path d="M 83 68  C 91 62 98 60 104 56"   class="ln w1 lv le" stroke-width="0.95" filter="url(#r)"/>
+  <path d="M 90 48  C 82 42 78 35 76 29"    class="ln w1 lv lf" stroke-width="0.9"  filter="url(#r)"/>
+  <path d="M 57 132 C 48 125 42 120 36 116" class="ln w2 lv lg" stroke-width="0.85" filter="url(#r)"/>
 
-**Frontend**
+  <!-- Top-right corner branch -->
+  <path d="M 862 22 C 854 35 848 50 842 64 C 836 77 832 90 828 102"
+        class="ln w1 bt" stroke-width="1.1" filter="url(#r)"/>
+  <path d="M 844 62 C 852 56 860 53 866 49" class="ln w1 lv lh" stroke-width="0.9" filter="url(#r)"/>
+  <path d="M 832 89 C 840 83 848 81 855 77" class="ln w1 lv li" stroke-width="0.9" filter="url(#r)"/>
+  <path d="M 826 102 C 818 108 812 114 810 120" class="ln w2 lv li" stroke-width="0.85" filter="url(#r)"/>
 
-![React](https://img.shields.io/badge/React-7B2FBE?style=for-the-badge&logo=react&logoColor=white)
-![Svelte](https://img.shields.io/badge/Svelte-A855F7?style=for-the-badge&logo=svelte&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-C084FC?style=for-the-badge&logo=vite&logoColor=white)
-![styled-components](https://img.shields.io/badge/styled--components-7B2FBE?style=for-the-badge&logo=styled-components&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/Tailwind-A855F7?style=for-the-badge&logo=tailwind-css&logoColor=white)
+  <!-- Bird flock: flying upper-right, fading into distance -->
+  <!-- Lead bird (largest, lowest) -->
+  <path d="M 644 98 Q 662 85 662 98 Q 662 85 680 98"
+        class="ln w3 bd b8" stroke-width="1.9"/>
+  <!-- 2nd -->
+  <path d="M 676 72 Q 692 60 692 72 Q 692 60 708 72"
+        class="ln w3 bd b1" stroke-width="1.75"/>
+  <!-- 3rd -->
+  <path d="M 703 53 Q 717 42 717 53 Q 717 42 731 53"
+        class="ln w3 bd b2" stroke-width="1.55"/>
+  <!-- 4th -->
+  <path d="M 729 38 Q 741 28 741 38 Q 741 28 753 38"
+        class="ln w3 bd b3" stroke-width="1.35"/>
+  <!-- Side bird -->
+  <path d="M 718 76 Q 729 66 729 76 Q 729 66 740 76"
+        class="ln w3 bd b4" stroke-width="1.45"/>
+  <!-- Small bird -->
+  <path d="M 746 59 Q 756 50 756 59 Q 756 50 766 59"
+        class="ln w3 bd b5" stroke-width="1.2"/>
+  <!-- Tiny bird -->
+  <path d="M 760 42 Q 768 35 768 42 Q 768 35 776 42"
+        class="ln w3 bd b6" stroke-width="1.1"/>
+  <!-- Highest/furthest tiny bird -->
+  <path d="M 746 26 Q 753 20 753 26 Q 753 20 760 26"
+        class="ln w3 bd b7" stroke-width="1"/>
 
-**Backend & Edge**
+  <!-- Separator line (hand-drawn) -->
+  <path d="M 236 116 C 274 114 328 118 390 116 C 452 114 506 118 544 116"
+        class="ln w2 sp" stroke-width="0.8" filter="url(#r)" opacity="0.65"/>
 
-![Node.js](https://img.shields.io/badge/Node.js-7B2FBE?style=for-the-badge&logo=node.js&logoColor=white)
-![Deno](https://img.shields.io/badge/Deno-A855F7?style=for-the-badge&logo=deno&logoColor=white)
-![Cloudflare Workers](https://img.shields.io/badge/CF_Workers-C084FC?style=for-the-badge&logo=cloudflare&logoColor=white)
-![Express](https://img.shields.io/badge/Express-7B2FBE?style=for-the-badge&logo=express&logoColor=white)
+  <!-- Main title: ブレント -->
+  <text x="390" y="100" text-anchor="middle"
+        font-family="'Noto Serif JP','Hiragino Mincho Pro','Yu Mincho','Times New Roman',serif"
+        font-size="44" font-weight="300"
+        fill="#E8E4DC" class="t1">ブレント</text>
 
-**Database & API**
+  <!-- Subtitle -->
+  <text x="390" y="144" text-anchor="middle"
+        font-family="'Courier New',Courier,monospace"
+        font-size="11.5" letter-spacing="5.5"
+        fill="#7A9A7A" class="t2">Brent001 · 開発者</text>
 
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-A855F7?style=for-the-badge&logo=postgresql&logoColor=white)
-![GraphQL](https://img.shields.io/badge/GraphQL-C084FC?style=for-the-badge&logo=graphql&logoColor=white)
-![Apollo](https://img.shields.io/badge/Apollo_Client-7B2FBE?style=for-the-badge&logo=apollographql&logoColor=white)
-![Drizzle ORM](https://img.shields.io/badge/Drizzle_ORM-A855F7?style=for-the-badge&logoColor=white)
-
-</div>
-
----
-
-## 📊 GitHub Stats
-
-<p align="center">
-  <img height="195" src="https://github-readme-stats.vercel.app/api?username=Brent001&theme=midnight-purple&show_icons=true&hide_border=true&count_private=true&include_all_commits=true" alt="Brent's GitHub Stats" />
-  &nbsp;
-  <img height="195" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Brent001&theme=midnight-purple&hide_border=true&layout=compact&langs_count=8" alt="Top Languages" />
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=Brent001&theme=midnight-purple&hide_border=true&date_format=j%20M%5B%20Y%5D" alt="GitHub Streak" />
-</p>
-
----
-
-## 🏆 Achievements
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Brent001&theme=dracula&no-frame=true&no-bg=true&column=7&margin-w=5" alt="GitHub Trophies" />
-</div>
-
----
-
-## 🌸 Featured Projects
-
-<p align="center">
-  <a href="https://github.com/Brent001/kaido_backup">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Brent001&repo=kaido_backup&theme=midnight-purple&hide_border=true" />
-  </a>
-  <a href="https://github.com/Brent001/consumet.ts_backup">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Brent001&repo=consumet.ts_backup&theme=midnight-purple&hide_border=true" />
-  </a>
-  <a href="https://github.com/Brent001/I-Kalibro-Admin-Dashboard">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Brent001&repo=I-Kalibro-Admin-Dashboard&theme=midnight-purple&hide_border=true" />
-  </a>
-  <a href="https://github.com/Brent001/Portfol.io">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Brent001&repo=Portfol.io&theme=midnight-purple&hide_border=true" />
-  </a>
-</p>
-
----
-
-## 📈 Contribution Activity
-
-<div align="center">
-  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Brent001&theme=tokyo-night&hide_border=true&area=true&bg_color=0d1117&color=C084FC&line=A855F7&point=7B2FBE" alt="Contribution Graph" />
-</div>
-
----
-
-## 🐍 Contribution Snake
-
-> ⚠️ Run the **snake workflow** first (see `snake.yml`) for this to appear!
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Brent001/Brent001/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Brent001/Brent001/output/github-contribution-grid-snake.svg" />
-    <img alt="GitHub contribution snake" src="https://raw.githubusercontent.com/Brent001/Brent001/output/github-contribution-grid-snake-dark.svg" />
-  </picture>
-</div>
-
----
-
-<div align="center">
-  <br/>
-
-> 🌙 *「決めた！」 — Every time I start a new project at 2AM*
-
-  <br/>
-
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=7B2FBE&height=120&section=footer" />
-</div>
+  <!-- Tag line -->
+  <text x="390" y="162" text-anchor="middle"
+        font-family="Arial,Helvetica,sans-serif"
+        font-size="9.5" letter-spacing="3"
+        fill="#3E5A3E" class="t3">cs student · builder · 作る者</text>
+</svg>
