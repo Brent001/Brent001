@@ -5,7 +5,7 @@
 <br/>
 
 <div align="center">
-<img src="https://readme-typing-svg.demolab.com?font=Noto+Serif+JP&weight=700&size=36&duration=4000&pause=1000&color=7BBFCC&center=true&vCenter=true&width=600&height=68&lines=Brent+Abrazaldo" alt="name"/>
+<img src="https://readme-typing-svg.demolab.com?font=Noto+Serif+JP&weight=700&size=36&duration=4000&pause=1000&color=7BBFCC&center=true&vCenter=true&width=600&height=68&lines=Brent001" alt="name"/>
 <br/>
 <img src="https://readme-typing-svg.demolab.com?font=Noto+Serif+JP&weight=400&size=18&duration=3000&pause=1200&color=9DB8A4&center=true&vCenter=true&width=660&height=44&lines=CS+Student+%E2%80%94+web+dev+%2F%2F+open+source;%E3%82%B3%E3%83%BC%E3%83%89%E3%82%92%E6%9B%B8%E3%81%8F%E3%80%81%E9%9F%B3%E6%A5%BD%E3%82%92%E8%81%B4%E3%81%8F%E3%80%81%E7%A9%BA%E3%82%92%E8%A6%8B%E3%82%8B;building+things+that+feel+alive" alt="subtitle"/>
 </div>
