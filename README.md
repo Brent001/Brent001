@@ -100,53 +100,7 @@
 </svg>
 </div>
 
-## Stats &nbsp;<sub>統計</sub>
 
-<div align="center">
-
-<!-- Achievements — rendered as styled SVG badges to avoid upstream API errors -->
-<svg viewBox="0 0 760 80" width="720" xmlns="http://www.w3.org/2000/svg" style="font-family:'Noto Serif JP',serif;">
-  <!-- Badge backgrounds -->
-  <rect x="4"   y="16" width="96" height="48" rx="10" fill="#162536" stroke="#a8d8ea" stroke-width="1.2"/>
-  <rect x="112" y="16" width="96" height="48" rx="10" fill="#162536" stroke="#b8e0d2" stroke-width="1.2"/>
-  <rect x="220" y="16" width="96" height="48" rx="10" fill="#162536" stroke="#d6c9e8" stroke-width="1.2"/>
-  <rect x="328" y="16" width="96" height="48" rx="10" fill="#162536" stroke="#a8d8ea" stroke-width="1.2"/>
-  <rect x="436" y="16" width="96" height="48" rx="10" fill="#162536" stroke="#b8e0d2" stroke-width="1.2"/>
-  <rect x="544" y="16" width="96" height="48" rx="10" fill="#162536" stroke="#d6c9e8" stroke-width="1.2"/>
-  <rect x="652" y="16" width="96" height="48" rx="10" fill="#162536" stroke="#a8d8ea" stroke-width="1.2"/>
-  <!-- Trophy icons -->
-  <text x="52"  y="38" text-anchor="middle" font-size="16" fill="#a8d8ea">🏆</text>
-  <text x="160" y="38" text-anchor="middle" font-size="16" fill="#b8e0d2">⭐</text>
-  <text x="268" y="38" text-anchor="middle" font-size="16" fill="#d6c9e8">🔥</text>
-  <text x="376" y="38" text-anchor="middle" font-size="16" fill="#a8d8ea">💡</text>
-  <text x="484" y="38" text-anchor="middle" font-size="16" fill="#b8e0d2">🌿</text>
-  <text x="592" y="38" text-anchor="middle" font-size="16" fill="#d6c9e8">🛠️</text>
-  <text x="700" y="38" text-anchor="middle" font-size="16" fill="#a8d8ea">✨</text>
-  <!-- Labels -->
-  <text x="52"  y="55" text-anchor="middle" font-size="9" fill="#8b9cb6">Commits</text>
-  <text x="160" y="55" text-anchor="middle" font-size="9" fill="#8b9cb6">Stars</text>
-  <text x="268" y="55" text-anchor="middle" font-size="9" fill="#8b9cb6">Streak</text>
-  <text x="376" y="55" text-anchor="middle" font-size="9" fill="#8b9cb6">Issues</text>
-  <text x="484" y="55" text-anchor="middle" font-size="9" fill="#8b9cb6">Open Source</text>
-  <text x="592" y="55" text-anchor="middle" font-size="9" fill="#8b9cb6">Pull Requests</text>
-  <text x="700" y="55" text-anchor="middle" font-size="9" fill="#8b9cb6">Repositories</text>
-</svg>
-
-<br/>
-
-<img height="175" src="https://github-readme-stats.vercel.app/api?username=Brent001&show_icons=true&bg_color=0d1117&border_color=a8d8ea&title_color=a8d8ea&text_color=8b9cb6&icon_color=b8e0d2&count_private=true&include_all_commits=true"/>&nbsp;<img height="175" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Brent001&layout=compact&bg_color=0d1117&border_color=d6c9e8&title_color=d6c9e8&text_color=8b9cb6&langs_count=8"/>
-
-<br/>
-
-<img src="https://streak-stats.demolab.com?user=Brent001&theme=dark&background=0d1117&border=a8d8ea&ring=7BBFCC&fire=d6c9e8&currStreakNum=a8d8ea&sideNums=b8e0d2&currStreakLabel=9DB8A4&sideLabels=9DB8A4&dates=5a6a7a" alt="streak"/>
-
-<br/><br/>
-
-<img width="96%" src="https://github-readme-activity-graph.vercel.app/graph?username=Brent001&bg_color=0d1117&color=a8d8ea&line=7BBFCC&point=d6c9e8&area=true&border_color=a8d8ea&radius=6" alt="activity graph"/>
-
-</div>
-
-<br/>
 
 <div align="center">
 <svg viewBox="0 0 820 44" width="720" xmlns="http://www.w3.org/2000/svg">
