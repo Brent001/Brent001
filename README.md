@@ -1,13 +1,11 @@
 <div align="center">
-<img src="https://raw.githubusercontent.com/Brent001/Brent001/main/header.svg" width="100%" alt="banner"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:162536,100:0d1117&height=220&section=header&text=Brent001&fontSize=70&fontColor=a8d8ea&fontAlignY=44&desc=CS+Student+%E2%80%94+web+dev+%2F%2F+open+source&descColor=9DB8A4&descAlignY=65&descSize=17" width="100%"/>
 </div>
 
 <br/>
 
 <div align="center">
-<img src="https://readme-typing-svg.demolab.com?font=Noto+Serif+JP&weight=700&size=36&duration=4000&pause=1000&color=7BBFCC&center=true&vCenter=true&width=600&height=68&lines=Brent001" alt="name"/>
-<br/>
-<img src="https://readme-typing-svg.demolab.com?font=Noto+Serif+JP&weight=400&size=18&duration=3000&pause=1200&color=9DB8A4&center=true&vCenter=true&width=660&height=44&lines=CS+Student+%E2%80%94+web+dev+%2F%2F+open+source;%E3%82%B3%E3%83%BC%E3%83%89%E3%82%92%E6%9B%B8%E3%81%8F%E3%80%81%E9%9F%B3%E6%A5%BD%E3%82%92%E8%81%B4%E3%81%8F%E3%80%81%E7%A9%BA%E3%82%92%E8%A6%8B%E3%82%8B;building+things+that+feel+alive" alt="subtitle"/>
+<img src="https://readme-typing-svg.demolab.com?font=Noto+Serif+JP&weight=400&size=17&duration=3000&pause=1200&color=9DB8A4&center=true&vCenter=true&width=620&height=42&lines=building+things+that+feel+alive;%E3%82%B3%E3%83%BC%E3%83%89%E3%82%92%E6%9B%B8%E3%81%8F%E3%80%81%E9%9F%B3%E6%A5%BD%E3%82%92%E8%81%B4%E3%81%8F%E3%80%81%E7%A9%BA%E3%82%92%E8%A6%8B%E3%82%8B;Philippines+%F0%9F%87%B5%F0%9F%87%AD+%E2%80%94+CS+Student+%E2%80%94+Open+Source" alt="subtitle"/>
 </div>
 
 <br/>
@@ -40,7 +38,7 @@
 ## About &nbsp;<sub>自己紹介</sub>
 
 ```
-  name    ///  Brent Abrazaldo
+  name    ///  Brent001
   from    ///  Philippines 🇵🇭
   role    ///  CS Student · Web Dev · Open Source
   now     ///  building things that feel alive
@@ -53,7 +51,6 @@
 
 <div align="center">
 <svg viewBox="0 0 820 52" width="720" xmlns="http://www.w3.org/2000/svg">
-  <!-- clouds -->
   <ellipse cx="110" cy="26" rx="54" ry="16" fill="#a8d8ea" opacity="0">
     <animate attributeName="opacity" from="0" to="0.14" dur="1s" begin="0.1s" fill="freeze"/>
   </ellipse>
@@ -63,7 +60,6 @@
   <ellipse cx="700" cy="26" rx="50" ry="14" fill="#a8d8ea" opacity="0">
     <animate attributeName="opacity" from="0" to="0.14" dur="1s" begin="0.5s" fill="freeze"/>
   </ellipse>
-  <!-- grass blades -->
   <line x1="44"  y1="48" x2="42"  y2="32" stroke="#b8e0d2" stroke-width="1.6" stroke-linecap="round" opacity="0"><animate attributeName="opacity" from="0" to="0.72" dur="0.4s" begin="0.3s" fill="freeze"/></line>
   <line x1="52"  y1="48" x2="55"  y2="30" stroke="#b8e0d2" stroke-width="1.6" stroke-linecap="round" opacity="0"><animate attributeName="opacity" from="0" to="0.72" dur="0.4s" begin="0.4s" fill="freeze"/></line>
   <line x1="60"  y1="48" x2="62"  y2="34" stroke="#b8e0d2" stroke-width="1.6" stroke-linecap="round" opacity="0"><animate attributeName="opacity" from="0" to="0.72" dur="0.4s" begin="0.5s" fill="freeze"/></line>
@@ -88,7 +84,7 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-b8e0d2?style=flat-square&logo=javascript&logoColor=1a2e3a)
 ![Svelte](https://img.shields.io/badge/Svelte-d6c9e8?style=flat-square&logo=svelte&logoColor=1a2e3a)
 ![Deno](https://img.shields.io/badge/Deno-a8d8ea?style=flat-square&logo=deno&logoColor=1a2e3a)
-![Node.js](https://img.shields.io/badge/Node.js-b8e0d2?style=flat-square&logo=nodedotjs&logoColor=1a2e3a)
+![Node.js](https://img.shields.io/badge/Node.js-b8e0d2?style=flat-square&logo=node.js&logoColor=1a2e3a)
 ![PHP](https://img.shields.io/badge/PHP-d6c9e8?style=flat-square&logo=php&logoColor=1a2e3a)
 ![MySQL](https://img.shields.io/badge/MySQL-a8d8ea?style=flat-square&logo=mysql&logoColor=1a2e3a)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind-b8e0d2?style=flat-square&logo=tailwindcss&logoColor=1a2e3a)
@@ -106,27 +102,23 @@
 </svg>
 </div>
 
-## Featured Work &nbsp;<sub>プロジェクト</sub>
-
-<div align="center">
-
-[![kaido_backup](https://github-readme-stats.vercel.app/api/pin/?username=Brent001&repo=kaido_backup&bg_color=0d1117&border_color=a8d8ea&title_color=a8d8ea&text_color=c9d1d9&icon_color=b8e0d2)](https://github.com/Brent001/kaido_backup)&nbsp;&nbsp;[![Portfol.io](https://github-readme-stats.vercel.app/api/pin/?username=Brent001&repo=Portfol.io&bg_color=0d1117&border_color=b8e0d2&title_color=b8e0d2&text_color=c9d1d9&icon_color=d6c9e8)](https://github.com/Brent001/Portfol.io)
-
-[![Kaguya_backup](https://github-readme-stats.vercel.app/api/pin/?username=Brent001&repo=Kaguya_backup&bg_color=0d1117&border_color=d6c9e8&title_color=d6c9e8&text_color=c9d1d9&icon_color=a8d8ea)](https://github.com/Brent001/Kaguya_backup)&nbsp;&nbsp;[![musify](https://github-readme-stats.vercel.app/api/pin/?username=Brent001&repo=musify&bg_color=0d1117&border_color=a8d8ea&title_color=a8d8ea&text_color=c9d1d9&icon_color=b8e0d2)](https://github.com/Brent001/musify)
-
-</div>
-
-<br/>
-
 ## Stats &nbsp;<sub>統計</sub>
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=Brent001&show_icons=true&bg_color=0d1117&border_color=a8d8ea&title_color=a8d8ea&text_color=8b9cb6&icon_color=b8e0d2&count_private=true"/>&nbsp;<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Brent001&layout=compact&bg_color=0d1117&border_color=d6c9e8&title_color=d6c9e8&text_color=8b9cb6&langs_count=6"/>
+<img src="https://github-profile-trophy.vercel.app/?username=Brent001&no-frame=true&no-bg=true&margin-w=6&column=7&theme=nord" width="100%" alt="trophies"/>
+
+<br/>
+
+<img height="175" src="https://github-readme-stats.vercel.app/api?username=Brent001&show_icons=true&bg_color=0d1117&border_color=a8d8ea&title_color=a8d8ea&text_color=8b9cb6&icon_color=b8e0d2&count_private=true&include_all_commits=true"/>&nbsp;<img height="175" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Brent001&layout=compact&bg_color=0d1117&border_color=d6c9e8&title_color=d6c9e8&text_color=8b9cb6&langs_count=8"/>
+
+<br/>
+
+<img src="https://streak-stats.demolab.com?user=Brent001&theme=dark&background=0d1117&border=a8d8ea&ring=7BBFCC&fire=d6c9e8&currStreakNum=a8d8ea&sideNums=b8e0d2&currStreakLabel=9DB8A4&sideLabels=9DB8A4&dates=5a6a7a" alt="streak"/>
 
 <br/><br/>
 
-<img src="https://streak-stats.demolab.com?user=Brent001&theme=dark&background=0d1117&border=a8d8ea&ring=7BBFCC&fire=d6c9e8&currStreakNum=a8d8ea&sideNums=b8e0d2&currStreakLabel=9DB8A4&sideLabels=9DB8A4&dates=5a6a7a"/>
+<img width="96%" src="https://github-readme-activity-graph.vercel.app/graph?username=Brent001&bg_color=0d1117&color=a8d8ea&line=7BBFCC&point=d6c9e8&area=true&border_color=a8d8ea&radius=6" alt="activity graph"/>
 
 </div>
 
@@ -134,23 +126,18 @@
 
 <div align="center">
 <svg viewBox="0 0 820 44" width="720" xmlns="http://www.w3.org/2000/svg">
-  <!-- 3 scribble stars -->
   <line x1="72" y1="12" x2="72" y2="32" stroke="#d6c9e8" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="20" stroke-dashoffset="20"><animate attributeName="stroke-dashoffset" from="20" to="0" dur="0.4s" begin="0.0s" fill="freeze"/></line>
   <line x1="62" y1="22" x2="82" y2="22" stroke="#d6c9e8" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="20" stroke-dashoffset="20"><animate attributeName="stroke-dashoffset" from="20" to="0" dur="0.4s" begin="0.1s" fill="freeze"/></line>
   <line x1="65" y1="15" x2="79" y2="29" stroke="#d6c9e8" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="20" stroke-dashoffset="20"><animate attributeName="stroke-dashoffset" from="20" to="0" dur="0.4s" begin="0.2s" fill="freeze"/></line>
   <line x1="79" y1="15" x2="65" y2="29" stroke="#d6c9e8" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="20" stroke-dashoffset="20"><animate attributeName="stroke-dashoffset" from="20" to="0" dur="0.4s" begin="0.3s" fill="freeze"/></line>
-
   <line x1="410" y1="8" x2="410" y2="36" stroke="#d6c9e8" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="28" stroke-dashoffset="28"><animate attributeName="stroke-dashoffset" from="28" to="0" dur="0.4s" begin="0.4s" fill="freeze"/></line>
   <line x1="396" y1="22" x2="424" y2="22" stroke="#d6c9e8" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="28" stroke-dashoffset="28"><animate attributeName="stroke-dashoffset" from="28" to="0" dur="0.4s" begin="0.5s" fill="freeze"/></line>
   <line x1="400" y1="12" x2="420" y2="32" stroke="#d6c9e8" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="28" stroke-dashoffset="28"><animate attributeName="stroke-dashoffset" from="28" to="0" dur="0.4s" begin="0.6s" fill="freeze"/></line>
   <line x1="420" y1="12" x2="400" y2="32" stroke="#d6c9e8" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="28" stroke-dashoffset="28"><animate attributeName="stroke-dashoffset" from="28" to="0" dur="0.4s" begin="0.7s" fill="freeze"/></line>
-
   <line x1="748" y1="12" x2="748" y2="32" stroke="#d6c9e8" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="20" stroke-dashoffset="20"><animate attributeName="stroke-dashoffset" from="20" to="0" dur="0.4s" begin="0.3s" fill="freeze"/></line>
   <line x1="738" y1="22" x2="758" y2="22" stroke="#d6c9e8" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="20" stroke-dashoffset="20"><animate attributeName="stroke-dashoffset" from="20" to="0" dur="0.4s" begin="0.4s" fill="freeze"/></line>
   <line x1="741" y1="15" x2="755" y2="29" stroke="#d6c9e8" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="20" stroke-dashoffset="20"><animate attributeName="stroke-dashoffset" from="20" to="0" dur="0.4s" begin="0.5s" fill="freeze"/></line>
   <line x1="755" y1="15" x2="741" y2="29" stroke="#d6c9e8" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="20" stroke-dashoffset="20"><animate attributeName="stroke-dashoffset" from="20" to="0" dur="0.4s" begin="0.6s" fill="freeze"/></line>
-
-  <!-- twinkling dots -->
   <circle cx="152" cy="20" r="2.2" fill="#a8d8ea" opacity="0.2"><animate attributeName="opacity" values="0.2;0.85;0.2" dur="2.8s" begin="0s" repeatCount="indefinite"/></circle>
   <circle cx="238" cy="34" r="1.8" fill="#a8d8ea" opacity="0.2"><animate attributeName="opacity" values="0.2;0.85;0.2" dur="3.2s" begin="0.5s" repeatCount="indefinite"/></circle>
   <circle cx="320" cy="12" r="2.4" fill="#a8d8ea" opacity="0.2"><animate attributeName="opacity" values="0.2;0.85;0.2" dur="2.5s" begin="1.0s" repeatCount="indefinite"/></circle>
@@ -168,4 +155,10 @@
 
 [![](https://img.shields.io/badge/github-Brent001-a8d8ea?style=flat-square&logo=github&logoColor=1a2e3a)](https://github.com/Brent001)
 
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:162536,100:0d1117&height=120&section=footer" width="100%"/>
 </div>
