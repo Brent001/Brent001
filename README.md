@@ -1,11 +1,11 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:162536,100:0d1117&height=220&section=header&text=Brent001&fontSize=70&fontColor=a8d8ea&fontAlignY=44&desc=CS+Student+%E2%80%94+web+dev+%2F%2F+open+source&descColor=9DB8A4&descAlignY=65&descSize=17" width="100%"/>
+  <img src="https://raw.githubusercontent.com/Brent001/Brent001/main/header.svg" width="100%"/>
 </div>
 
 <br/>
 
 <div align="center">
-<img src="https://readme-typing-svg.demolab.com?font=Noto+Serif+JP&weight=400&size=17&duration=3000&pause=1200&color=9DB8A4&center=true&vCenter=true&width=620&height=42&lines=building+things+that+feel+alive;%E3%82%B3%E3%83%BC%E3%83%89%E3%82%92%E6%9B%B8%E3%81%8F%E3%80%81%E9%9F%B3%E6%A5%BD%E3%82%92%E8%81%B4%E3%81%8F%E3%80%81%E7%A9%BA%E3%82%92%E8%A6%8B%E3%82%8B;Philippines+%F0%9F%87%B5%F0%9F%87%AD+%E2%80%94+CS+Student+%E2%80%94+Open+Source" alt="subtitle"/>
+<img src="https://readme-typing-svg.demolab.com?font=Noto+Serif+JP&weight=400&size=17&duration=3000&pause=1200&color=9DB8A4&center=true&vCenter=true&width=620&height=42&lines=building+things+that+feel+alive;%E3%82%B3%E3%83%BC%E3%83%89%E3%82%92%E6%9B%B8%E3%81%8F%E3%80%81%E9%9F%B3%E6%A5%BD%E3%82%92%E8%81%B4%E3%81%8F%E3%80%81%E7%A9%BA%E3%82%92%E8%A6%8B%E3%82%8B;CS+Student+%E2%80%94+Web+Dev+%E2%80%94+Open+Source" alt="subtitle"/>
 </div>
 
 <br/>
@@ -38,8 +38,6 @@
 ## About &nbsp;<sub>自己紹介</sub>
 
 ```
-  name    ///  Brent001
-  from    ///  Philippines 🇵🇭
   role    ///  CS Student · Web Dev · Open Source
   now     ///  building things that feel alive
 ```
@@ -106,7 +104,33 @@
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=Brent001&no-frame=true&no-bg=true&margin-w=6&column=7&theme=nord" width="100%" alt="trophies"/>
+<!-- Achievements — rendered as styled SVG badges to avoid upstream API errors -->
+<svg viewBox="0 0 760 80" width="720" xmlns="http://www.w3.org/2000/svg" style="font-family:'Noto Serif JP',serif;">
+  <!-- Badge backgrounds -->
+  <rect x="4"   y="16" width="96" height="48" rx="10" fill="#162536" stroke="#a8d8ea" stroke-width="1.2"/>
+  <rect x="112" y="16" width="96" height="48" rx="10" fill="#162536" stroke="#b8e0d2" stroke-width="1.2"/>
+  <rect x="220" y="16" width="96" height="48" rx="10" fill="#162536" stroke="#d6c9e8" stroke-width="1.2"/>
+  <rect x="328" y="16" width="96" height="48" rx="10" fill="#162536" stroke="#a8d8ea" stroke-width="1.2"/>
+  <rect x="436" y="16" width="96" height="48" rx="10" fill="#162536" stroke="#b8e0d2" stroke-width="1.2"/>
+  <rect x="544" y="16" width="96" height="48" rx="10" fill="#162536" stroke="#d6c9e8" stroke-width="1.2"/>
+  <rect x="652" y="16" width="96" height="48" rx="10" fill="#162536" stroke="#a8d8ea" stroke-width="1.2"/>
+  <!-- Trophy icons -->
+  <text x="52"  y="38" text-anchor="middle" font-size="16" fill="#a8d8ea">🏆</text>
+  <text x="160" y="38" text-anchor="middle" font-size="16" fill="#b8e0d2">⭐</text>
+  <text x="268" y="38" text-anchor="middle" font-size="16" fill="#d6c9e8">🔥</text>
+  <text x="376" y="38" text-anchor="middle" font-size="16" fill="#a8d8ea">💡</text>
+  <text x="484" y="38" text-anchor="middle" font-size="16" fill="#b8e0d2">🌿</text>
+  <text x="592" y="38" text-anchor="middle" font-size="16" fill="#d6c9e8">🛠️</text>
+  <text x="700" y="38" text-anchor="middle" font-size="16" fill="#a8d8ea">✨</text>
+  <!-- Labels -->
+  <text x="52"  y="55" text-anchor="middle" font-size="9" fill="#8b9cb6">Commits</text>
+  <text x="160" y="55" text-anchor="middle" font-size="9" fill="#8b9cb6">Stars</text>
+  <text x="268" y="55" text-anchor="middle" font-size="9" fill="#8b9cb6">Streak</text>
+  <text x="376" y="55" text-anchor="middle" font-size="9" fill="#8b9cb6">Issues</text>
+  <text x="484" y="55" text-anchor="middle" font-size="9" fill="#8b9cb6">Open Source</text>
+  <text x="592" y="55" text-anchor="middle" font-size="9" fill="#8b9cb6">Pull Requests</text>
+  <text x="700" y="55" text-anchor="middle" font-size="9" fill="#8b9cb6">Repositories</text>
+</svg>
 
 <br/>
 
